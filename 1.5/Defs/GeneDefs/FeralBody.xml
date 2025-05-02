@@ -31,8 +31,8 @@
     <li Class="FCP_Ghoul.ToxBomb_ModExtension">
       <radius>0.9</radius>
       <rate>200</rate>
-
     </li>
+    <li Class="FCP_Ghoul.FeralFur_ModExtension"></li>
     </modExtensions>
   </GeneDef>
 

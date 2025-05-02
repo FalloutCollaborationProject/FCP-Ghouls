@@ -19,6 +19,9 @@
                 </li>
             </suffixSymbols>
         </symbolPack>
+        <modExtensions>
+            <li Class="FCP_Ghoul.SkinA_ModExtension"></li>
+        </modExtensions>
     </GeneDef>
     <GeneDef ParentName="GeneSkinColorOverride">
         <defName>FCP_Skin_B</defName>
@@ -40,6 +43,9 @@
                 </li>
             </suffixSymbols>
         </symbolPack>
+        <modExtensions>
+            <li Class="FCP_Ghoul.SkinB_ModExtension"></li>
+        </modExtensions>
     </GeneDef>
 
     <GeneDef ParentName="GeneSkinColorOverride">
@@ -62,6 +68,9 @@
                 </li>
             </suffixSymbols>
         </symbolPack>
+        <modExtensions>
+            <li Class="FCP_Ghoul.SkinC_ModExtension"></li>
+        </modExtensions>
     </GeneDef>
 
     <GeneDef ParentName="GeneSkinColorOverride">
@@ -84,6 +93,9 @@
                 </li>
             </suffixSymbols>
         </symbolPack>
+        <modExtensions>
+            <li Class="FCP_Ghoul.SkinD_ModExtension"></li>
+        </modExtensions>
     </GeneDef>
 
     <GeneDef ParentName="GeneSkinColorOverride">
@@ -106,6 +118,9 @@
                 </li>
             </suffixSymbols>
         </symbolPack>
+        <modExtensions>
+            <li Class="FCP_Ghoul.SkinE_ModExtension"></li>
+        </modExtensions>
     </GeneDef>
 
     <GeneDef ParentName="GeneSkinColorOverride">
@@ -128,5 +143,8 @@
                 </li>
             </suffixSymbols>
         </symbolPack>
+        <modExtensions>
+            <li Class="FCP_Ghoul.SkinFeral_ModExtension"></li>
+        </modExtensions>
     </GeneDef>
 </Defs>

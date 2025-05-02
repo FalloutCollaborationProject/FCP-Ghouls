@@ -27,6 +27,9 @@
         <parentTagDef>Body</parentTagDef>
       </li>
     </renderNodeProperties>
+    <modExtensions>
+			<li Class="FCP_Ghoul.Fur_ModExtension"></li>
+		</modExtensions>
   </GeneDef>
 
 </Defs>

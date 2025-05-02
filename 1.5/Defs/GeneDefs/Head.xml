@@ -42,5 +42,8 @@
       <li>Fur</li>
       <li>BeardStyle</li>
     </exclusionTags>
+    <modExtensions>
+      <li Class="FCP_Ghoul.Head_ModExtension"></li>
+    </modExtensions>
   </GeneDef>
 </Defs>
