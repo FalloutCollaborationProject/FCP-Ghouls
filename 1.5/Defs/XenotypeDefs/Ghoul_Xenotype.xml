@@ -21,5 +21,8 @@
 			<li>FCP_Skin_C</li>
 			<li>FCP_Skin_D</li>
 		</genes>
+		<modExtensions>
+			<li Class="FCP_Ghoul.TurnFeral_ModExtension"></li>
+		</modExtensions>
 	</XenotypeDef>
 </Defs>
