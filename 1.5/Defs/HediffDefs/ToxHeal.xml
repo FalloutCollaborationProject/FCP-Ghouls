@@ -18,5 +18,8 @@
                 </statFactors>
             </li>
         </stages>
+        <modExtensions>
+            <li Class="FCP_Ghoul.ToxHealHediff_ModExtension"></li>
+        </modExtensions>
     </HediffDef>
 </Defs>
