@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <!--__________ Ghoul Feral Heads __________-->
+
+    <!-- Ghoul -->
+
+    <GeneDef>
+        <defName>FCP_Gene_Feral_Head</defName>
+        <label>Feral Ghoul Head</label>
+        <labelShortAdj>Feral Ghoul Head</labelShortAdj>
+        <description>Alters the head to resemble that of a feral ghoul—sunken features, mottled skin, and a haunting, irradiated appearance. This mutation is a mark of surviving extreme radiation, but often inspires fear and distrust in others.</description>
+        <geneClass>FCP_Ghoul.FeralHead_Gene</geneClass>
+        <biostatCpx>1</biostatCpx> <!-- placeholder -->
+        <biostatMet>-1</biostatMet> <!-- placeholder -->
+        <displayCategory>Miscellaneous</displayCategory>
+        <displayOrderInCategory>400</displayOrderInCategory>
+        <iconPath>UI/Icons/Genes/FCP_Gene_Ghoul</iconPath> <!-- placeholder -->
+        <iconColor>(0.75, 0.75, 0.75)</iconColor><!-- placeholder -->
+        <forcedHeadTypes>
+            <li>FCP_HeadType_Feral_Male</li>
+            <li>FCP_HeadType_Feral_Female</li>
+        </forcedHeadTypes>
+        <skinIsHairColor>false</skinIsHairColor>
+        <tattoosVisible>false</tattoosVisible>
+        <renderNodeProperties>
+            <li>
+                <nodeClass>FCP_Ghoul.PawnRenderNode_CustomColorForHead</nodeClass>
+                <!--<nodeClass>PawnRenderNode_Fur</nodeClass>-->
+                <workerClass>PawnRenderNodeWorker_Head</workerClass>
+                <baseLayer>5</baseLayer>
+                <rotDrawMode>Fresh, Rotting</rotDrawMode>
+                <colorType>Skin</colorType>
+                <parentTagDef>Body</parentTagDef>
+            </li>
+        </renderNodeProperties>
+        <hairTagFilter>
+            <whitelist>true</whitelist>
+            <tags>
+                <li>Bald</li>
+            </tags>
+        </hairTagFilter>
+        <beardTagFilter>
+            <whitelist>true</whitelist>
+            <tags />
+        </beardTagFilter>
+        <exclusionTags>
+            <li>HairStyle</li>
+            <li>Fur</li>
+            <li>BeardStyle</li>
+        </exclusionTags>
+        <modExtensions>
+            <li Class="FCP_Ghoul.FeralHead_ModExtension" />
+        </modExtensions>
+    </GeneDef>
+
+</Defs>
