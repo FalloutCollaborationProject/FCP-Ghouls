@@ -1,9 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
+
+    <!--__________ Ghoul Glowing one and Feral Genes __________-->
+
+    <!--_____ Genes _____-->
+
+    <!-- Toxic Heal -->
+
     <GeneDef>
         <defName>FCP_Gene_ToxHeal</defName>
-        <label>tox heal</label>
-        <description>placeholder.</description>
-        <iconPath>UI/Icons/Genes/Gene_PollutionRush</iconPath>
+        <label>Toxic healing</label>
+        <description>The carrier's body has adapted to radiation and toxins, allowing them to heal when exposed to toxic buildup or polluted environments. This mutation is common among ghouls, granting them remarkable resilience where others would suffer.</description>
+        <iconPath>UI/Icons/Genes/FCP_Gene_Ghoul_Toxic_Heal</iconPath>
         <displayCategory>Miscellaneous</displayCategory>
         <displayOrderInCategory>500</displayOrderInCategory>
         <biostatCpx>1</biostatCpx>
@@ -18,24 +26,28 @@
         </modExtensions>
     </GeneDef>
 
+    <!-- Toxic Aura -->
+
     <GeneDef>
         <defName>FCP_Gene_ToxSpawn</defName>
-        <label>tox spawn</label>
-        <description>placeholder.</description>
+        <label>Toxic Aura</label>
+        <description>The carrier emits a faint toxic aura, slowly polluting the surrounding environment. This mutation is a side effect of extreme radiation exposure, common among feral ghouls and other heavily mutated beings.</description>
         <geneClass>FCP_Ghoul.EmitToxGene</geneClass>
-        <iconPath>UI/Icons/Genes/Gene_PollutionRush</iconPath>
+        <iconPath>UI/Icons/Genes/FCP_Gene_Ghoul_Toxic_Heal</iconPath>
         <displayCategory>Miscellaneous</displayCategory>
         <displayOrderInCategory>500</displayOrderInCategory>
         <biostatCpx>1</biostatCpx>
         <biostatMet>-1</biostatMet>
     </GeneDef>
 
+    <!-- Toxic Glow -->
+
     <GeneDef>
         <defName>FCP_Gene_Glow</defName>
         <label>glow</label>
-        <description>placeholder.</description>
+        <description>The carrier emits a faint, unnatural glow from their body, a hallmark of the rare "Glowing One" mutation among ghouls. This eerie radiance is caused by intense internal radiation and can illuminate dark areas, but may also draw unwanted attention.</description>
         <geneClass>FCP_Ghoul.ChanceGene</geneClass>
-        <iconPath>UI/Icons/Genes/Gene_PollutionRush</iconPath>
+        <iconPath>UI/Icons/Genes/FCP_Gene_Ghoul_Toxic_Heal</iconPath>
         <displayCategory>Miscellaneous</displayCategory>
         <displayOrderInCategory>500</displayOrderInCategory>
         <biostatCpx>1</biostatCpx>
@@ -49,7 +61,6 @@
 				<baseLayer>5</baseLayer>
             </li>
         </renderNodeProperties>
-
-        
     </GeneDef>
+
 </Defs>
