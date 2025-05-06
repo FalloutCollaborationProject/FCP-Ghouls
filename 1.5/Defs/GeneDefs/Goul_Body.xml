@@ -34,7 +34,7 @@
             </li>
         </renderNodeProperties>
         <modExtensions>
-            <li Class="FCP_Ghoul.Fur_ModExtension"></li>
+            <li Class="FCP_Ghoul.Fur_ModExtension" />
         </modExtensions>
     </GeneDef>
 
