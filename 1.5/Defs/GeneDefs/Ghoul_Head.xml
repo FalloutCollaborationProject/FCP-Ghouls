@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <!--__________ Ghoul Heads __________-->
+
+    <!-- Ghoul -->
+
+    <GeneDef>
+        <defName>FCP_Gene_Ghoul_Head</defName>
+        <label>Ghoul Head</label>
+        <labelShortAdj>Ghoul Head</labelShortAdj>
+        <description>Transforms the head into that of a ghoul—marked by leathery, mottled skin and sunken features. This mutation is a visible sign of surviving extreme radiation, but often causes discomfort or fear in others.</description>
+        <biostatCpx>1</biostatCpx>
+        <biostatMet>-1</biostatMet>
+        <displayCategory>Miscellaneous</displayCategory>
+        <displayOrderInCategory>400</displayOrderInCategory>
+        <iconPath>UI/Icons/Genes/FCP_Gene_Ghoul</iconPath>
+        <iconColor>(0.75, 0.75, 0.75)</iconColor>
+        <forcedHeadTypes>
+            <li>FCP_HeadType_AverageNormal_Male</li>
+            <li>FCP_HeadType_AverageNormal_Female</li>
+            <li>FCP_HeadType_AveragePointy_Male</li>
+            <li>FCP_HeadType_AveragePointy_Female</li>
+            <li>FCP_HeadType_AverageWide_Male</li>
+            <li>FCP_HeadType_AverageWide_Female</li>
+            <li>FCP_HeadType_NarrowNormal_Male</li>
+            <li>FCP_HeadType_NarrowNormal_Female</li>
+            <li>FCP_HeadType_NarrowPointy_Male</li>
+            <li>FCP_HeadType_NarrowPointy_Female</li>
+            <li>FCP_HeadType_NarrowWide_Male</li>
+            <li>FCP_HeadType_NarrowWide_Female</li>
+        </forcedHeadTypes>
+        <skinIsHairColor>false</skinIsHairColor>
+        <tattoosVisible>false</tattoosVisible>
+        <hairTagFilter>
+            <whitelist>true</whitelist>
+            <tags>
+                <li>Bald</li>
+            </tags>
+        </hairTagFilter>
+        <beardTagFilter>
+            <whitelist>true</whitelist>
+            <tags />
+        </beardTagFilter>
+        <exclusionTags>
+            <li>HairStyle</li>
+            <li>Fur</li>
+            <li>BeardStyle</li>
+        </exclusionTags>
+        <modExtensions>
+            <li Class="FCP_Ghoul.Head_ModExtension" />
+        </modExtensions>
+    </GeneDef>
+
+</Defs>
