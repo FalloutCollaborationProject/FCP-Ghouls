@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!--__________ Ghoul FurDefs __________-->
+
+	<!-- Feral Ghoul -->
+
+	<FurDef>
+		<defName>FCP_Fur_Feral_Ghoul</defName>
+		<noGraphic>true</noGraphic>
+		<bodyTypeGraphicPaths>
+			<Male>FCP_Ghoul/Feral/Bodies/Naked_Male</Male>
+			<Female>FCP_Ghoul/Feral/Bodies/Naked_Male</Female>
+			<Hulk>FCP_Ghoul/Feral/Bodies/Naked_Male</Hulk>
+			<Thin>FCP_Ghoul/Feral/Bodies/Naked_Male</Thin>
+			<Fat>FCP_Ghoul/Feral/Bodies/Naked_Male</Fat>
+		</bodyTypeGraphicPaths>
+	</FurDef>
+
+	<!-- Ghoul -->
+
+	<FurDef>
+		<defName>FCP_Fur_Ghoul</defName>
+		<noGraphic>true</noGraphic>
+		<bodyTypeGraphicPaths>
+			<Male>FCP_Ghoul/Bodies/Naked_Male</Male>
+			<Female>FCP_Ghoul/Bodies/Naked_Female</Female>
+			<Hulk>FCP_Ghoul/Bodies/Naked_Hulk</Hulk>
+			<Thin>FCP_Ghoul/Bodies/Naked_Thin</Thin>
+		</bodyTypeGraphicPaths>
+	</FurDef>
+
+</Defs>
