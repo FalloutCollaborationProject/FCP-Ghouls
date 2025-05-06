@@ -75,7 +75,7 @@
         <minAgeActive>3</minAgeActive>
         <modExtensions>
             <li Class="FCP_Ghoul.FeralityGene_ModExtension">
-                <rate>2</rate>
+                <rate>10000</rate>
                 <amountReduced>20</amountReduced>
                 <drugs>
                     <li>GoJuice</li>
