@@ -167,7 +167,6 @@
         <description>[PAWN_nameDef] spent decades living in subway tunnels and sewers, avoiding the sun and surface dangers. [PAWN_pronoun] became adept at moving unseen and surviving in the dark.</description>
         <skillGains>
             <Mining>4</Mining>
-            <Stealth>3</Stealth>
             <Medicine>2</Medicine>
         </skillGains>
         <workDisables>Social</workDisables>
@@ -695,7 +694,6 @@
         <description>[PAWN_nameDef] made a living digging up graves and looting the dead. [PAWN_pronoun] is skilled at moving quietly and finding hidden things.</description>
         <skillGains>
             <Mining>3</Mining>
-            <Stealth>4</Stealth>
             <Plants>1</Plants>
         </skillGains>
         <workDisables>Social</workDisables>
@@ -744,7 +742,6 @@
         <skillGains>
             <Mining>5</Mining>
             <Plants>2</Plants>
-            <Stealth>2</Stealth>
         </skillGains>
         <workDisables>Social</workDisables>
         <requiredWorkTags>None</requiredWorkTags>
@@ -1128,7 +1125,6 @@
         <titleShort>Scout</titleShort>
         <description>[PAWN_nameDef] was sent ahead of ghoul groups to scout out safe paths through radioactive wastelands, using [PAWN_possessive] glow as a beacon in the dark.</description>
         <skillGains>
-            <Stealth>4</Stealth>
             <Plants>2</Plants>
             <Shooting>2</Shooting>
         </skillGains>

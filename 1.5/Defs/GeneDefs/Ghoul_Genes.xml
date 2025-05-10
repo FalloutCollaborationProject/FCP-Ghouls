@@ -33,7 +33,7 @@
         <label>Toxic Aura</label>
         <description>The carrier emits a faint toxic aura, slowly polluting the surrounding environment. This mutation is a side effect of extreme radiation exposure, common among feral ghouls and other heavily mutated beings.</description>
         <geneClass>FCP_Ghoul.EmitToxGene</geneClass>
-        <iconPath>UI/Icons/Genes/FCP_Gene_Ghoul_Toxic_Heal</iconPath>
+        <iconPath>UI/Icons/Genes/FCP_Gene_Ghoul_Toxic_Aura</iconPath>
         <displayCategory>Miscellaneous</displayCategory>
         <displayOrderInCategory>500</displayOrderInCategory>
         <biostatCpx>1</biostatCpx>
@@ -70,7 +70,7 @@
         <label>Ferality</label>
         <description>Pushes the mind further from humanity, causing the ghoul to become increasingly feral and aggressive. Once rational thought fades, instinct and hostility take over, making social interaction nearly impossible.</description>
         <geneClass>FCP_Ghoul.Gene_Ferality</geneClass>
-        <iconPath>UI/Icons/Genes/FCP_Gene_Feral_Ghoul</iconPath>
+        <iconPath>UI/Icons/Genes/FCP_Gene_Ghoul_Toxic_Aura</iconPath>
         <biostatMet>2</biostatMet>
         <minAgeActive>3</minAgeActive>
         <modExtensions>
