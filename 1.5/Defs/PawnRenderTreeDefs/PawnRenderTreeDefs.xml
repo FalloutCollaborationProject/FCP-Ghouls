@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <PawnRenderTreeDef>
+        <defName>FCPG_Ghoul</defName>
+        <root Class="PawnRenderNodeProperties_Parent">
+            <debugLabel>Root</debugLabel>
+            <tagDef>Root</tagDef>
+            <children>
+
+            </children>
+        </root>
+    </PawnRenderTreeDef>
+
+</Defs>
