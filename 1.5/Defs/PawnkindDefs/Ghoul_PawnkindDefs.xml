@@ -4,7 +4,6 @@
     <!--__________ Pawnkinds __________-->
 
     <!--_____ Ghouls _____-->
-
     <!-- Ghoul Wastelander -->
 
     <PawnKindDef ParentName="FCP_GhoulkindBase">
@@ -15,20 +14,16 @@
         <gearHealthRange>0.5~1.8</gearHealthRange>
         <apparelMoney>600~1000</apparelMoney>
         <weaponMoney>600</weaponMoney>
-        <weaponTags>
-            <li>FCP_Basic_Weapons</li>
-        </weaponTags>
-        <disallowedTraits>
-        </disallowedTraits>
-        <requiredWorkTags>
-        </requiredWorkTags>
-        <techHediffsMoney>50~50</techHediffsMoney>
-        <techHediffsTags>
-            <li>Poor</li>
-        </techHediffsTags>
         <techHediffsChance>0.03</techHediffsChance>
         <initialWillRange>1~3</initialWillRange>
         <initialResistanceRange>15~24</initialResistanceRange>
+        <techHediffsMoney>50~50</techHediffsMoney>
+        <weaponTags>
+            <li>FCP_Basic_Weapons</li>
+        </weaponTags>
+        <techHediffsTags>
+            <li>Poor</li>
+        </techHediffsTags>
         <backstoryFiltersOverride>
             <li>
                 <categoriesChildhood>
@@ -42,7 +37,6 @@
     </PawnKindDef>
 
     <!--_____ Glowing Ones _____-->
-
     <!-- Glowing One Wastelander -->
 
     <PawnKindDef ParentName="FCP_Glowing_OnekindBase">
@@ -53,20 +47,16 @@
         <gearHealthRange>0.5~1.8</gearHealthRange>
         <apparelMoney>600~1000</apparelMoney>
         <weaponMoney>600</weaponMoney>
-        <weaponTags>
-            <li>FCP_Basic_Weapons</li>
-        </weaponTags>
-        <disallowedTraits>
-        </disallowedTraits>
-        <requiredWorkTags>
-        </requiredWorkTags>
-        <techHediffsMoney>50~50</techHediffsMoney>
-        <techHediffsTags>
-            <li>Poor</li>
-        </techHediffsTags>
         <techHediffsChance>0.03</techHediffsChance>
         <initialWillRange>1~3</initialWillRange>
         <initialResistanceRange>15~24</initialResistanceRange>
+        <techHediffsMoney>50~50</techHediffsMoney>
+        <weaponTags>
+            <li>FCP_Basic_Weapons</li>
+        </weaponTags>
+        <techHediffsTags>
+            <li>Poor</li>
+        </techHediffsTags>
         <backstoryFiltersOverride>
             <li>
                 <categoriesChildhood>

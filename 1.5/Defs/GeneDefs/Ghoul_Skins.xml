@@ -27,9 +27,6 @@
                 </li>
             </suffixSymbols>
         </symbolPack>
-        <modExtensions>
-            <li Class="FCP_Ghoul.SkinA_ModExtension" />
-        </modExtensions>
     </GeneDef>
 
     <!-- Skin B (light peach) -->
@@ -54,9 +51,6 @@
                 </li>
             </suffixSymbols>
         </symbolPack>
-        <modExtensions>
-            <li Class="FCP_Ghoul.SkinB_ModExtension" />
-        </modExtensions>
     </GeneDef>
 
     <!-- Skin C (pale golden beige) -->
@@ -81,9 +75,6 @@
                 </li>
             </suffixSymbols>
         </symbolPack>
-        <modExtensions>
-            <li Class="FCP_Ghoul.SkinC_ModExtension" />
-        </modExtensions>
     </GeneDef>
 
     <!-- Skin D (pale beige) -->
@@ -108,9 +99,6 @@
                 </li>
             </suffixSymbols>
         </symbolPack>
-        <modExtensions>
-            <li Class="FCP_Ghoul.SkinD_ModExtension" />
-        </modExtensions>
     </GeneDef>
 
     <!-- Skin E (pale ochre) -->
@@ -135,9 +123,6 @@
                 </li>
             </suffixSymbols>
         </symbolPack>
-        <modExtensions>
-            <li Class="FCP_Ghoul.SkinE_ModExtension" />
-        </modExtensions>
     </GeneDef>
 
     <!-- Skin F ( feral very light peach) -->
@@ -162,9 +147,6 @@
                 </li>
             </suffixSymbols>
         </symbolPack>
-        <modExtensions>
-            <li Class="FCP_Ghoul.SkinFeral_ModExtension" />
-        </modExtensions>
     </GeneDef>
 
 </Defs>

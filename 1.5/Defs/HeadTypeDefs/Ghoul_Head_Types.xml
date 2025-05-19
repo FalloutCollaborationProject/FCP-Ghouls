@@ -12,9 +12,9 @@
         <beardMeshSize>(1.7, 1.5)</beardMeshSize>
         <randomChosen>false</randomChosen>
         <selectionWeight>99999</selectionWeight>
-        <requiredGenes>
+        <!--<requiredGenes>
             <li>FCP_Gene_Feral_Head</li>
-        </requiredGenes>
+        </requiredGenes>-->
         <eyeOffsetEastWest>(0.16, 0, 0.17)</eyeOffsetEastWest>
     </HeadTypeDef>
 
@@ -43,9 +43,9 @@
         <beardMeshSize>(1.7, 1.5)</beardMeshSize>
         <randomChosen>false</randomChosen>
         <selectionWeight>99999</selectionWeight>
-        <requiredGenes>
+        <!--<requiredGenes>
             <li>FCP_Gene_Ghoul_Head</li>
-        </requiredGenes>
+        </requiredGenes>-->
         <eyeOffsetEastWest>(0.16, 0, 0.17)</eyeOffsetEastWest>
     </HeadTypeDef>
 

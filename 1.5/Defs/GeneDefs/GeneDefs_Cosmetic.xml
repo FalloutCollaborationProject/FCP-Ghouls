@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!--
+        TODO: base skin color for all ghouls, can vary (within a range of RGB values)
+        TODO: find good RGB ranges for what we want
+        TODO: need new icon
+        TODO: need to pick icon color
+    -->
+
+    <GeneDef>
+        <defName>FCP_Ghoul_SkinColor</defName>
+        <label>ghoul skin</label>
+        <labelShortAdj>ghoul skin</labelShortAdj>
+        <description>Carriers of this gene produce varying pigments, giving slightly different shades of colored skin.</description>
+        <geneClass>FCP_Ghoul.Gene_GhoulSkin</geneClass>
+        <iconColor>(0.75, 0.75, 0.75)</iconColor>
+        <displayOrderInCategory>99</displayOrderInCategory>
+        <modExtensions>
+            <li Class="FCP_Ghoul.ModExtension_Gene_GhoulSkin">
+                <redRange>0.3~0.8</redRange>
+                <greenRange>0.45~0.8</greenRange>
+                <blueRange>0.3~0.7</blueRange>
+            </li>
+        </modExtensions>
+    </GeneDef>
+
+    <GeneDef>
+        <defName>FCP_Ghoul_Skin_Head</defName>
+        <label>ghoul skin (head)</label>
+        <labelShortAdj>ghoul-skinned</labelShortAdj>
+        <description>Transforms the head into that of a ghoul—marked by leathery, mottled skin and sunken features. This mutation is a visible sign of surviving extreme radiation, but often causes discomfort or fear in others.</description>
+        <biostatCpx>1</biostatCpx>
+        <biostatMet>-1</biostatMet>
+        <displayCategory>Miscellaneous</displayCategory>
+        <displayOrderInCategory>400</displayOrderInCategory>
+        <iconPath>UI/Icons/Genes/FCP_Gene_Ghoul</iconPath> <!-- TODO: need new icon -->
+        <iconColor>(0.75, 0.75, 0.75)</iconColor> <!-- TODO: change? -->
+        <forcedHeadTypes>
+            <li>FCP_HeadType_Ghoul_AverageNormal_Male</li>
+            <li>FCP_HeadType_Ghoul_AverageNormal_Female</li>
+            <li>FCP_HeadType_Ghoul_AveragePointy_Male</li>
+            <li>FCP_HeadType_Ghoul_AveragePointy_Female</li>
+            <li>FCP_HeadType_Ghoul_AverageWide_Male</li>
+            <li>FCP_HeadType_Ghoul_AverageWide_Female</li>
+            <li>FCP_HeadType_Ghoul_NarrowNormal_Male</li>
+            <li>FCP_HeadType_Ghoul_NarrowNormal_Female</li>
+            <li>FCP_HeadType_Ghoul_NarrowPointy_Male</li>
+            <li>FCP_HeadType_Ghoul_NarrowPointy_Female</li>
+            <li>FCP_HeadType_Ghoul_NarrowWide_Male</li>
+            <li>FCP_HeadType_Ghoul_NarrowWide_Female</li>
+        </forcedHeadTypes>
+        <skinIsHairColor>false</skinIsHairColor>
+        <tattoosVisible>false</tattoosVisible>
+        <hairTagFilter>
+            <whitelist>true</whitelist>
+            <tags>
+                <li>Bald</li>
+            </tags>
+        </hairTagFilter>
+        <beardTagFilter>
+            <whitelist>true</whitelist>
+            <tags />
+        </beardTagFilter>
+        <exclusionTags>
+            <li>HairStyle</li>
+            <li>Fur</li>
+            <li>BeardStyle</li>
+        </exclusionTags>
+        <renderNodeProperties>
+            <li>
+                <debugLabel>Ghoul skin</debugLabel>
+                <nodeClass>FCP_Ghoul.PawnRenderNode_HeadSkinColor</nodeClass>
+                <workerClass>PawnRenderNodeWorker_Head</workerClass>
+                <rotDrawMode>Fresh, Rotting</rotDrawMode>
+                <baseLayer>55</baseLayer>
+                <overlayLayer>Head</overlayLayer>
+            </li>
+        </renderNodeProperties>
+    </GeneDef>
+
+    <GeneDef>
+        <defName>FCP_Ghoul_Skin_Body</defName>
+        <label>ghoul skin (body)</label>
+        <labelShortAdj>ghoul-skinned</labelShortAdj>
+        <description>This gene gives the carrier the distinctive, decayed body of a ghoul—skin mottled and withered by intense radiation, yet remarkably resilient. Ghouls are often shunned for their appearance, but their bodies endure where others would perish.</description>
+        <biostatCpx>1</biostatCpx>
+        <biostatMet>-1</biostatMet>
+        <displayCategory>Miscellaneous</displayCategory>
+        <displayOrderInCategory>400</displayOrderInCategory>
+        <iconPath>UI/Icons/Genes/Gene_Furskin</iconPath> <!-- TODO: need new icon -->
+        <iconColor>(0.75, 0.75, 0.75)</iconColor> <!-- TODO: change? -->
+        <missingGeneRomanceChanceFactor>0.2</missingGeneRomanceChanceFactor>
+        <fur>FCP_Fur_Ghoul</fur>
+        <skinIsHairColor>false</skinIsHairColor>
+        <tattoosVisible>false</tattoosVisible>
+        <exclusionTags>
+            <li>Bodies</li>
+            <li>Body</li>
+        </exclusionTags>
+        <statOffsets>
+            <ComfyTemperatureMin>-10</ComfyTemperatureMin>
+        </statOffsets>
+        <renderNodeProperties>
+            <li>
+                <debugLabel>Ghoul skin</debugLabel>
+                <nodeClass>FCP_Ghoul.PawnRenderNode_BodySkinColor</nodeClass>
+                <workerClass>PawnRenderNodeWorker_Fur</workerClass>
+                <rotDrawMode>Fresh, Rotting</rotDrawMode>
+                <baseLayer>5</baseLayer>
+                <colorType>Skin</colorType>
+                <parentTagDef>Body</parentTagDef>
+            </li>
+        </renderNodeProperties>
+    </GeneDef>
+
+    <!--
+        TODO: for both feral and xenos
+    -->
+
+    <GeneDef>
+        <defName>FCP_Gene_Ghoul_Glow</defName>
+        <label>glow</label>
+        <description>The carrier emits a faint, unnatural glow from their body, a hallmark of the rare "Glowing One" mutation among ghouls. This eerie radiance is caused by intense internal radiation and can illuminate dark areas, but may also draw unwanted attention.</description>
+        <geneClass>FCP_Ghoul.Gene_Glowing</geneClass>
+        <iconPath>UI/Icons/Genes/FCP_Gene_Ghoul_Toxic_Heal</iconPath>
+        <displayCategory>Miscellaneous</displayCategory>
+        <displayOrderInCategory>500</displayOrderInCategory>
+        <biostatCpx>1</biostatCpx>
+        <biostatMet>-1</biostatMet>
+        <renderNodeProperties>
+            <li>
+                <nodeClass>FCP_Ghoul.PawnRenderNode_HeadGlow</nodeClass>
+                <workerClass>PawnRenderNodeWorker_Head</workerClass>
+                <overlayLayer>Head</overlayLayer>
+                <rotDrawMode>Fresh</rotDrawMode>
+                <shaderTypeDef>TransparentPostLight</shaderTypeDef>
+                <baseLayer>55</baseLayer>
+            </li>
+            <li>
+                <nodeClass>FCP_Ghoul.PawnRenderNode_BodyGlow</nodeClass>
+                <overlayLayer>Body</overlayLayer>
+                <rotDrawMode>Fresh</rotDrawMode>
+                <shaderTypeDef>TransparentPostLight</shaderTypeDef>
+                <baseLayer>5</baseLayer>
+            </li>
+        </renderNodeProperties>
+        <modExtensions>
+            <li Class="FCP_Ghoul.ModExtension_Gene_Glowing">
+                <redRange>0.6~1.0</redRange>
+                <greenRange>1.0~1.0</greenRange>
+                <blueRange>0.0~1.0</blueRange>
+            </li>
+        </modExtensions>
+    </GeneDef>
+
+</Defs>
