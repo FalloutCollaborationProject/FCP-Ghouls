@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-    <!--__________ Ghoul Skin Genes __________-->
-
-    <!--_____ Skins _____-->
-
-    <!-- Skin A (Light yellow-green) -->
-
-    <GeneDef ParentName="GeneSkinColorOverride">
+    <!--<GeneDef ParentName="GeneSkinColorOverride">
         <defName>FCP_Skin_Ghoul_A</defName>
         <label>Light yellow-green shade skin</label>
         <labelShortAdj>light yellow-green shade skin</labelShortAdj>
@@ -28,8 +22,6 @@
             </suffixSymbols>
         </symbolPack>
     </GeneDef>
-
-    <!-- Skin B (light peach) -->
 
     <GeneDef ParentName="GeneSkinColorOverride">
         <defName>FCP_Skin_Ghoul_B</defName>
@@ -53,8 +45,6 @@
         </symbolPack>
     </GeneDef>
 
-    <!-- Skin C (pale golden beige) -->
-
     <GeneDef ParentName="GeneSkinColorOverride">
         <defName>FCP_Skin_Ghoul_C</defName>
         <label>Pale golden beige skin</label>
@@ -76,8 +66,6 @@
             </suffixSymbols>
         </symbolPack>
     </GeneDef>
-
-    <!-- Skin D (pale beige) -->
 
     <GeneDef ParentName="GeneSkinColorOverride">
         <defName>FCP_Skin_Ghoul_D</defName>
@@ -101,8 +89,6 @@
         </symbolPack>
     </GeneDef>
 
-    <!-- Skin E (pale ochre) -->
-
     <GeneDef ParentName="GeneSkinColorOverride">
         <defName>FCP_Skin_Ghoul_E</defName>
         <label>Pale ochre skin</label>
@@ -125,8 +111,6 @@
         </symbolPack>
     </GeneDef>
 
-    <!-- Skin F ( feral very light peach) -->
-
     <GeneDef ParentName="GeneSkinColorOverride">
         <defName>FCP_Skin_Ghoul_Feral</defName>
         <label>Feral very light peach skin</label>
@@ -147,6 +131,6 @@
                 </li>
             </suffixSymbols>
         </symbolPack>
-    </GeneDef>
+    </GeneDef>-->
 
 </Defs>
