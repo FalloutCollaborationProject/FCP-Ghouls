@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <!--__________ Ghoul Skin Genes __________-->
+
+    <!--_____ Skins _____-->
+
+    <!-- Skin A (Light yellow-green) -->
+
+    <GeneDef ParentName="GeneSkinColorOverride">
+        <defName>FCP_Skin_Ghoul_A</defName>
+        <label>Light yellow-green shade skin</label>
+        <labelShortAdj>light yellow-green shade skin</labelShortAdj>
+        <description>Carriers of this gene produce a pigment that turns their skin a light yellow-green shade.</description>
+        <randomBrightnessFactor>0</randomBrightnessFactor>
+        <skinColorOverride>(0.9,1,0.7)</skinColorOverride>
+        <displayOrderInCategory>99</displayOrderInCategory>
+        <symbolPack>
+            <prefixSymbols>
+                <li>
+                    <symbol>something</symbol>
+                </li>
+            </prefixSymbols>
+            <suffixSymbols>
+                <li>
+                    <symbol>something</symbol>
+                </li>
+            </suffixSymbols>
+        </symbolPack>
+        <modExtensions>
+            <li Class="FCP_Ghoul.SkinA_ModExtension" />
+        </modExtensions>
+    </GeneDef>
+
+    <!-- Skin B (light peach) -->
+
+    <GeneDef ParentName="GeneSkinColorOverride">
+        <defName>FCP_Skin_Ghoul_B</defName>
+        <label>Light peach skin</label>
+        <labelShortAdj>Light peach skin</labelShortAdj>
+        <description>Carriers of this gene produce a pigment that turns their skin a light peach.</description>
+        <randomBrightnessFactor>0</randomBrightnessFactor>
+        <skinColorOverride>(1,0.9,0.8)</skinColorOverride>
+        <displayOrderInCategory>99</displayOrderInCategory>
+        <symbolPack>
+            <prefixSymbols>
+                <li>
+                    <symbol>something</symbol>
+                </li>
+            </prefixSymbols>
+            <suffixSymbols>
+                <li>
+                    <symbol>something</symbol>
+                </li>
+            </suffixSymbols>
+        </symbolPack>
+        <modExtensions>
+            <li Class="FCP_Ghoul.SkinB_ModExtension" />
+        </modExtensions>
+    </GeneDef>
+
+    <!-- Skin C (pale golden beige) -->
+
+    <GeneDef ParentName="GeneSkinColorOverride">
+        <defName>FCP_Skin_Ghoul_C</defName>
+        <label>Pale golden beige skin</label>
+        <labelShortAdj>Pale golden beige skin</labelShortAdj>
+        <description>Carriers of this gene produce a pigment that turns their skin a pale golden beige.</description>
+        <randomBrightnessFactor>0</randomBrightnessFactor>
+        <skinColorOverride>(1,0.9,0.7)</skinColorOverride>
+        <displayOrderInCategory>99</displayOrderInCategory>
+        <symbolPack>
+            <prefixSymbols>
+                <li>
+                    <symbol>something</symbol>
+                </li>
+            </prefixSymbols>
+            <suffixSymbols>
+                <li>
+                    <symbol>something</symbol>
+                </li>
+            </suffixSymbols>
+        </symbolPack>
+        <modExtensions>
+            <li Class="FCP_Ghoul.SkinC_ModExtension" />
+        </modExtensions>
+    </GeneDef>
+
+    <!-- Skin D (pale beige) -->
+
+    <GeneDef ParentName="GeneSkinColorOverride">
+        <defName>FCP_Skin_Ghoul_D</defName>
+        <label>Ashen tan skin</label>
+        <labelShortAdj>Ashen tan skin</labelShortAdj>
+        <description>Carriers of this gene produce a pigment that turns their skin an ashen tan.</description>
+        <randomBrightnessFactor>0</randomBrightnessFactor>
+        <skinColorOverride>(0.7,0.6,0.5)</skinColorOverride>
+        <displayOrderInCategory>99</displayOrderInCategory>
+        <symbolPack>
+            <prefixSymbols>
+                <li>
+                    <symbol>something</symbol>
+                </li>
+            </prefixSymbols>
+            <suffixSymbols>
+                <li>
+                    <symbol>something</symbol>
+                </li>
+            </suffixSymbols>
+        </symbolPack>
+        <modExtensions>
+            <li Class="FCP_Ghoul.SkinD_ModExtension" />
+        </modExtensions>
+    </GeneDef>
+
+    <!-- Skin E (pale ochre) -->
+
+    <GeneDef ParentName="GeneSkinColorOverride">
+        <defName>FCP_Skin_Ghoul_E</defName>
+        <label>Pale ochre skin</label>
+        <labelShortAdj>Pale ochre skin</labelShortAdj>
+        <description>Carriers of this gene produce a pigment that turns their skin a pale ochre.</description>
+        <randomBrightnessFactor>0</randomBrightnessFactor>
+        <skinColorOverride>(0.7,0.6,0.4)</skinColorOverride>
+        <displayOrderInCategory>99</displayOrderInCategory>
+        <symbolPack>
+            <prefixSymbols>
+                <li>
+                    <symbol>something</symbol>
+                </li>
+            </prefixSymbols>
+            <suffixSymbols>
+                <li>
+                    <symbol>something</symbol>
+                </li>
+            </suffixSymbols>
+        </symbolPack>
+        <modExtensions>
+            <li Class="FCP_Ghoul.SkinE_ModExtension" />
+        </modExtensions>
+    </GeneDef>
+
+    <!-- Skin F ( feral very light peach) -->
+
+    <GeneDef ParentName="GeneSkinColorOverride">
+        <defName>FCP_Skin_Ghoul_Feral</defName>
+        <label>Feral very light peach skin</label>
+        <labelShortAdj>Feral very light peach skin</labelShortAdj>
+        <description>Carriers of this gene produce a pigment that turns their skin a very light peach.</description>
+        <randomBrightnessFactor>0</randomBrightnessFactor>
+        <skinColorOverride>(1,0.9,0.8)</skinColorOverride>
+        <displayOrderInCategory>99</displayOrderInCategory>
+        <symbolPack>
+            <prefixSymbols>
+                <li>
+                    <symbol>something</symbol>
+                </li>
+            </prefixSymbols>
+            <suffixSymbols>
+                <li>
+                    <symbol>something</symbol>
+                </li>
+            </suffixSymbols>
+        </symbolPack>
+        <modExtensions>
+            <li Class="FCP_Ghoul.SkinFeral_ModExtension" />
+        </modExtensions>
+    </GeneDef>
+
+</Defs>

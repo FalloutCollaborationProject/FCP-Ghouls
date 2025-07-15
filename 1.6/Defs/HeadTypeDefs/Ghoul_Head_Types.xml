@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <!--__________ Ghoul Headtypes __________-->
+
+    <!--_____ Feral Ghouls _____-->
+
+    <!-- Feral Ghoul Base -->
+
+    <HeadTypeDef Name="FCP_HeadType_Ghoul_Feral" Abstract="True">
+        <hairMeshSize>(1.5, 1.5)</hairMeshSize>
+        <beardMeshSize>(1.7, 1.5)</beardMeshSize>
+        <randomChosen>false</randomChosen>
+        <selectionWeight>99999</selectionWeight>
+        <requiredGenes>
+            <li>FCP_Gene_Feral_Head</li>
+        </requiredGenes>
+        <eyeOffsetEastWest>(0.16, 0, 0.17)</eyeOffsetEastWest>
+    </HeadTypeDef>
+
+    <!-- Feral Ghoul Male -->
+
+    <HeadTypeDef ParentName="FCP_HeadType_Ghoul_Feral">
+        <defName>FCP_HeadType_Ghoul_Feral_Male</defName>
+        <gender>Male</gender>
+        <graphicPath>FCP_Ghoul/Feral/Heads/GhoulHead</graphicPath>
+    </HeadTypeDef>
+
+    <!-- Feral Ghoul Female -->
+
+    <HeadTypeDef ParentName="FCP_HeadType_Ghoul_Feral">
+        <defName>FCP_HeadType_Ghoul_Feral_Female</defName>
+        <gender>Female</gender>
+        <graphicPath>FCP_Ghoul/Feral/Heads/GhoulHead</graphicPath>
+    </HeadTypeDef>
+
+    <!--_____ Ghouls _____-->
+
+    <!-- Ghoul Base -->
+
+    <HeadTypeDef Name="FCP_HeadType_Ghoul_AverageNormal" Abstract="True">
+        <hairMeshSize>(1.5, 1.5)</hairMeshSize>
+        <beardMeshSize>(1.7, 1.5)</beardMeshSize>
+        <randomChosen>false</randomChosen>
+        <selectionWeight>99999</selectionWeight>
+        <requiredGenes>
+            <li>FCP_Gene_Ghoul_Head</li>
+        </requiredGenes>
+        <eyeOffsetEastWest>(0.16, 0, 0.17)</eyeOffsetEastWest>
+    </HeadTypeDef>
+
+    <!-- Ghoul Average Normal Male -->
+
+    <HeadTypeDef ParentName="FCP_HeadType_Ghoul_AverageNormal">
+        <defName>FCP_HeadType_Ghoul_AverageNormal_Male</defName>
+        <gender>Male</gender>
+        <graphicPath>FCP_Ghoul/Heads/Male_Ghoul_Average_Normal</graphicPath>
+    </HeadTypeDef>
+
+    <!-- Ghoul Average Normal Female -->
+
+    <HeadTypeDef ParentName="FCP_HeadType_Ghoul_AverageNormal">
+        <defName>FCP_HeadType_Ghoul_AverageNormal_Female</defName>
+        <gender>Female</gender>
+        <graphicPath>FCP_Ghoul/Heads/Female_Ghoul_Average_Normal</graphicPath>
+    </HeadTypeDef>
+
+    <!-- Ghoul Average Pointy Male -->
+
+    <HeadTypeDef ParentName="FCP_HeadType_Ghoul_AverageNormal">
+        <defName>FCP_HeadType_Ghoul_AveragePointy_Male</defName>
+        <gender>Male</gender>
+        <graphicPath>FCP_Ghoul/Heads/Male_Ghoul_Average_Pointy</graphicPath>
+    </HeadTypeDef>
+
+    <!-- Ghoul Average Pointy Female -->
+
+    <HeadTypeDef ParentName="FCP_HeadType_Ghoul_AverageNormal">
+        <defName>FCP_HeadType_Ghoul_AveragePointy_Female</defName>
+        <gender>Female</gender>
+        <graphicPath>FCP_Ghoul/Heads/Female_Ghoul_Average_Pointy</graphicPath>
+    </HeadTypeDef>
+
+    <!-- Ghoul Average Wide Male -->
+
+    <HeadTypeDef ParentName="FCP_HeadType_Ghoul_AverageNormal">
+        <defName>FCP_HeadType_Ghoul_AverageWide_Male</defName>
+        <gender>Male</gender>
+        <graphicPath>FCP_Ghoul/Heads/Male_Ghoul_Average_Wide</graphicPath>
+    </HeadTypeDef>
+
+    <!-- Ghoul Average Wide Female -->
+
+    <HeadTypeDef ParentName="FCP_HeadType_Ghoul_AverageNormal">
+        <defName>FCP_HeadType_Ghoul_AverageWide_Female</defName>
+        <gender>Female</gender>
+        <graphicPath>FCP_Ghoul/Heads/Female_Ghoul_Average_Wide</graphicPath>
+    </HeadTypeDef>
+
+    <!-- Ghoul Narrow Normal Male -->
+
+    <HeadTypeDef ParentName="FCP_HeadType_Ghoul_AverageNormal">
+        <defName>FCP_HeadType_Ghoul_NarrowNormal_Male</defName>
+        <gender>Male</gender>
+        <graphicPath>FCP_Ghoul/Heads/Male_Ghoul_Narrow_Normal</graphicPath>
+    </HeadTypeDef>
+
+    <!-- Ghoul Narrow Normal Female -->
+
+    <HeadTypeDef ParentName="FCP_HeadType_Ghoul_AverageNormal">
+        <defName>FCP_HeadType_Ghoul_NarrowNormal_Female</defName>
+        <gender>Female</gender>
+        <graphicPath>FCP_Ghoul/Heads/Female_Ghoul_Narrow_Normal</graphicPath>
+    </HeadTypeDef>
+
+    <!-- Ghoul Narrow Pointy Male -->
+
+    <HeadTypeDef ParentName="FCP_HeadType_Ghoul_AverageNormal">
+        <defName>FCP_HeadType_Ghoul_NarrowPointy_Male</defName>
+        <gender>Male</gender>
+        <graphicPath>FCP_Ghoul/Heads/Male_Ghoul_Narrow_Pointy</graphicPath>
+    </HeadTypeDef>
+
+    <!-- Ghoul Narrow Pointy Female -->
+
+    <HeadTypeDef ParentName="FCP_HeadType_Ghoul_AverageNormal">
+        <defName>FCP_HeadType_Ghoul_NarrowPointy_Female</defName>
+        <gender>Female</gender>
+        <graphicPath>FCP_Ghoul/Heads/Female_Ghoul_Narrow_Pointy</graphicPath>
+    </HeadTypeDef>
+
+    <!-- Ghoul Narrow Wide Male -->
+
+    <HeadTypeDef ParentName="FCP_HeadType_Ghoul_AverageNormal">
+        <defName>FCP_HeadType_Ghoul_NarrowWide_Male</defName>
+        <gender>Male</gender>
+        <graphicPath>FCP_Ghoul/Heads/Male_Ghoul_Narrow_Wide</graphicPath>
+    </HeadTypeDef>
+
+    <!-- Ghoul Narrow Wide Female -->
+
+    <HeadTypeDef ParentName="FCP_HeadType_Ghoul_AverageNormal">
+        <defName>FCP_HeadType_Ghoul_NarrowWide_Female</defName>
+        <gender>Female</gender>
+        <graphicPath>FCP_Ghoul/Heads/Female_Ghoul_Narrow_Wide</graphicPath>
+    </HeadTypeDef>
+
+</Defs>

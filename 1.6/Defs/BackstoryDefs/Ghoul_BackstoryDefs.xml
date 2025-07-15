@@ -1,0 +1,1285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <!--__________ Backstories __________-->
+
+    <!--_____ Factions _____-->
+
+    <!--____ Wastelanders ____-->
+
+    <!--___ Ghoul Adults ___-->
+
+    <!-- Post-war Undertaker -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Wastelander_Post_war_Undertaker</defName>
+        <identifier>FCP_Backstory_Wastelander_Post_war_Undertaker</identifier>
+        <slot>Adulthood</slot>
+        <title>Post-war Undertaker</title>
+        <titleShort>Post-war Undertaker</titleShort>
+        <description>Life in the wasteland was often brutal, arduous and short. Some of the larger settlements employed an undertaker. [PAWN_nameDef] was one of those undertakers and [PAWN_possessive] job was to dig graves and bury those whose lives were claimed by raiders, radiation, mutated beasts and, occasionally, old age.</description>
+        <skillGains>
+            <Construction>4</Construction>
+            <Mining>4</Mining>
+            <Medicine>2</Medicine>
+            <Social>-4</Social>
+        </skillGains>
+        <workDisables>None</workDisables>
+        <requiredWorkTags>None</requiredWorkTags>
+        <spawnCategories>
+            <li>FCP_Backstory_Ghoul</li>
+        </spawnCategories>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <possessions />
+    </BackstoryDef>
+
+    <!-- Post-war Bodyguard -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Wastelander_Post_war_Bodyguard</defName>
+        <identifier>FCP_Backstory_Wastelander_Post_war_Bodyguard</identifier>
+        <slot>Adulthood</slot>
+        <title>Post-war Bodyguard</title>
+        <titleShort>Post-war Bodyguard</titleShort>
+        <description>[PAWN_nameDef] made a living by protecting affluent customers from the dangers of the wasteland. [PAWN_pronoun] protected wealthy caravaners, important officials from everything and everyone that would harm them, as long as they paid of course. While it may have been less lethal than working as a mercenary, it was still dangerous and [PAWN_nameDef] had the scars to prove it.</description>
+        <skillGains>
+            <Shooting>3</Shooting>
+            <Melee>4</Melee>
+            <Crafting>2</Crafting>
+            <Medicine>2</Medicine>
+        </skillGains>
+        <workDisables>None</workDisables>
+        <requiredWorkTags>None</requiredWorkTags>
+        <spawnCategories>
+            <li>FCP_Ghoul</li>
+        </spawnCategories>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <possessions />
+    </BackstoryDef>
+    
+    <!-- Pre-war Gourmet -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Wastelander_Pre_war_Gourmet</defName>
+        <identifier>FCP_Backstory_Wastelander_Pre_war_Gourmet</identifier>
+        <slot>Adulthood</slot>
+        <title>Pre-war Gourmet</title>
+        <titleShort>Pre-war Gourmet</titleShort>
+        <description>Just the thought of eating radroaches or molerats made [PAWN_nameDef] shiver with disgust. [PAWN_pronoun] was what some called an old-world gourmet and preferred to dine on ancient rations of canned meat, mac and cheese and Salisbury steak. While most members of [PAWN_possessive] community only shook their heads at [PAWN_possessive] behaviour, none could argue that [PAWN_pronoun] was indeed a good cook.</description>
+        <skillGains>
+            <Cooking>5</Cooking>
+            <Artistic>5</Artistic>
+            <Social>4</Social>
+        </skillGains>
+        <workDisables>PlantWork, Animals</workDisables>
+        <requiredWorkTags>None</requiredWorkTags>
+        <spawnCategories>
+            <li>FCP_Backstory_Ghoul</li>
+        </spawnCategories>
+        <bodyTypeGlobal>Fat</bodyTypeGlobal>
+        <bodyTypeFemale>Fat</bodyTypeFemale>
+        <bodyTypeMale>Fat</bodyTypeMale>
+        <possessions />
+    </BackstoryDef>
+
+    <!-- Ghoul Scavenger -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Ghoul_Scavenger</defName>
+        <identifier>FCP_Backstory_Ghoul_Scavenger</identifier>
+        <slot>Adulthood</slot>
+        <title>Wasteland Scavenger</title>
+        <titleShort>Scavenger</titleShort>
+        <description>[PAWN_nameDef] survived by picking through ruins and forgotten vaults, always searching for something valuable. Years of scavenging made [PAWN_pronoun] resourceful, but wary of strangers.</description>
+        <skillGains>
+            <Construction>2</Construction>
+            <Mining>3</Mining>
+            <Shooting>2</Shooting>
+        </skillGains>
+        <workDisables>None</workDisables>
+        <requiredWorkTags>None</requiredWorkTags>
+        <spawnCategories>
+            <li>FCP_Backstory_Ghoul</li>
+        </spawnCategories>
+        <bodyTypeFemale>Thin</bodyTypeFemale>
+        <bodyTypeMale>Thin</bodyTypeMale>
+        <possessions />
+    </BackstoryDef>
+
+    <!-- Ghoul Historian -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Ghoul_Historian</defName>
+        <identifier>FCP_Backstory_Ghoul_Historian</identifier>
+        <slot>Adulthood</slot>
+        <title>Pre-war Historian</title>
+        <titleShort>Historian</titleShort>
+        <description>Before the bombs fell, [PAWN_nameDef] was a keeper of knowledge. Now, [PAWN_pronoun] is a living relic, sharing stories of the old world with anyone who will listen.</description>
+        <skillGains>
+            <Intellectual>5</Intellectual>
+            <Social>3</Social>
+            <Artistic>2</Artistic>
+        </skillGains>
+        <workDisables>Violent</workDisables>
+        <requiredWorkTags>None</requiredWorkTags>
+        <spawnCategories>
+            <li>FCP_Backstory_Ghoul</li>
+        </spawnCategories>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <possessions />
+    </BackstoryDef>
+
+    <!-- Ghoul Bartender -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Ghoul_Bartender</defName>
+        <identifier>FCP_Backstory_Ghoul_Bartender</identifier>
+        <slot>Adulthood</slot>
+        <title>Wasteland Bartender</title>
+        <titleShort>Bartender</titleShort>
+        <description>[PAWN_nameDef] ran a bar in a half-collapsed building, serving drinks and advice to travelers and locals alike. [PAWN_pronoun] learned to listen, and to break up the occasional brawl.</description>
+        <skillGains>
+            <Social>4</Social>
+            <Cooking>2</Cooking>
+            <Melee>2</Melee>
+        </skillGains>
+        <workDisables>Animals</workDisables>
+        <requiredWorkTags>None</requiredWorkTags>
+        <spawnCategories>
+            <li>FCP_Backstory_Ghoul</li>
+        </spawnCategories>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <possessions />
+    </BackstoryDef>
+
+    <!-- Ghoul Tunnel Rat -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Ghoul_Tunnel_Rat</defName>
+        <identifier>FCP_Backstory_Ghoul_Tunnel_Rat</identifier>
+        <slot>Adulthood</slot>
+        <title>Tunnel Rat</title>
+        <titleShort>Tunnel Rat</titleShort>
+        <description>[PAWN_nameDef] spent decades living in subway tunnels and sewers, avoiding the sun and surface dangers. [PAWN_pronoun] became adept at moving unseen and surviving in the dark.</description>
+        <skillGains>
+            <Mining>4</Mining>
+            <Medicine>2</Medicine>
+        </skillGains>
+        <workDisables>Social</workDisables>
+        <requiredWorkTags>None</requiredWorkTags>
+        <spawnCategories>
+            <li>FCP_Backstory_Ghoul</li>
+        </spawnCategories>
+        <bodyTypeFemale>Thin</bodyTypeFemale>
+        <bodyTypeMale>Thin</bodyTypeMale>
+        <possessions />
+    </BackstoryDef>
+
+    <!-- Ghoul Pre-war Doctor -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Ghoul_Pre_war_Doctor</defName>
+        <identifier>FCP_Backstory_Ghoul_Pre_war_Doctor</identifier>
+        <slot>Adulthood</slot>
+        <title>Pre-war Doctor</title>
+        <titleShort>Doctor</titleShort>
+        <description>Once a respected physician, [PAWN_nameDef] now uses [PAWN_possessive] knowledge to patch up wounds and treat radiation sickness in the wasteland.</description>
+        <skillGains>
+            <Medicine>6</Medicine>
+            <Intellectual>3</Intellectual>
+            <Social>1</Social>
+        </skillGains>
+        <workDisables>Violent</workDisables>
+        <requiredWorkTags>None</requiredWorkTags>
+        <spawnCategories>
+            <li>FCP_Backstory_Ghoul</li>
+        </spawnCategories>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <possessions />
+    </BackstoryDef>
+
+    <!-- Ghoul Caravan Guard -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Ghoul_Caravan_Guard</defName>
+        <identifier>FCP_Backstory_Ghoul_Caravan_Guard</identifier>
+        <slot>Adulthood</slot>
+        <title>Caravan Guard</title>
+        <titleShort>Caravan Guard</titleShort>
+        <description>[PAWN_nameDef] spent years escorting caravans across the wasteland, fending off raiders and mutants. [PAWN_pronoun] is always alert for danger.</description>
+        <skillGains>
+            <Shooting>4</Shooting>
+            <Melee>3</Melee>
+            <Animals>2</Animals>
+        </skillGains>
+        <workDisables>Artistic</workDisables>
+        <requiredWorkTags>None</requiredWorkTags>
+        <spawnCategories>
+            <li>FCP_Backstory_Ghoul</li>
+        </spawnCategories>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <possessions />
+    </BackstoryDef>
+
+    <!-- Ghoul Vault Janitor -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Ghoul_Vault_Janitor</defName>
+        <identifier>FCP_Backstory_Ghoul_Vault_Janitor</identifier>
+        <slot>Adulthood</slot>
+        <title>Vault Janitor</title>
+        <titleShort>Janitor</titleShort>
+        <description>[PAWN_nameDef] kept the vault clean and running, fixing leaks and unclogging pipes. After the bombs, [PAWN_pronoun] just kept working, even as the vault fell apart.</description>
+        <skillGains>
+            <Construction>3</Construction>
+            <Crafting>3</Crafting>
+            <Plants>2</Plants>
+        </skillGains>
+        <workDisables>Social</workDisables>
+        <requiredWorkTags>None</requiredWorkTags>
+        <spawnCategories>
+            <li>FCP_Backstory_Ghoul</li>
+        </spawnCategories>
+        <bodyTypeFemale>Thin</bodyTypeFemale>
+        <bodyTypeMale>Thin</bodyTypeMale>
+        <possessions />
+    </BackstoryDef>
+
+    <!-- Ghoul Pre-war Entertainer -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Ghoul_Entertainer</defName>
+        <identifier>FCP_Backstory_Ghoul_Entertainer</identifier>
+        <slot>Adulthood</slot>
+        <title>Pre-war Entertainer</title>
+        <titleShort>Entertainer</titleShort>
+        <description>Once a singer or comedian, [PAWN_nameDef] now entertains wastelanders with tales and songs from a world long gone.</description>
+        <skillGains>
+            <Artistic>5</Artistic>
+            <Social>3</Social>
+            <Cooking>1</Cooking>
+        </skillGains>
+        <workDisables>Violent</workDisables>
+        <requiredWorkTags>None</requiredWorkTags>
+        <spawnCategories>
+            <li>FCP_Backstory_Ghoul</li>
+        </spawnCategories>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <possessions />
+    </BackstoryDef>
+
+    <!-- Ghoul Feral Survivor -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Ghoul_Feral_Survivor</defName>
+        <identifier>FCP_Backstory_Ghoul_Feral_Survivor</identifier>
+        <slot>Adulthood</slot>
+        <title>Feral Survivor</title>
+        <titleShort>Feral Survivor</titleShort>
+        <description>[PAWN_nameDef] spent years on the edge of feral madness, surviving by instinct alone. [PAWN_pronoun] is tough, but struggles to relate to others.</description>
+        <skillGains>
+            <Melee>5</Melee>
+            <Plants>3</Plants>
+            <Social>-3</Social>
+        </skillGains>
+        <workDisables>Intellectual, Artistic</workDisables>
+        <requiredWorkTags>None</requiredWorkTags>
+        <spawnCategories>
+            <li>FCP_Backstory_Ghoul</li>
+        </spawnCategories>
+        <bodyTypeFemale>Thin</bodyTypeFemale>
+        <bodyTypeMale>Thin</bodyTypeMale>
+        <possessions />
+    </BackstoryDef>
+
+    <!-- Ghoul Old World Mechanic -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Ghoul_Mechanic</defName>
+        <identifier>FCP_Backstory_Ghoul_Mechanic</identifier>
+        <slot>Adulthood</slot>
+        <title>Old World Mechanic</title>
+        <titleShort>Mechanic</titleShort>
+        <description>[PAWN_nameDef] fixed cars, robots, and anything else with moving parts before the war. Now, [PAWN_pronoun] keeps battered machines running in the wasteland.</description>
+        <skillGains>
+            <Crafting>5</Crafting>
+            <Construction>4</Construction>
+            <Intellectual>1</Intellectual>
+        </skillGains>
+        <workDisables>Animals</workDisables>
+        <requiredWorkTags>None</requiredWorkTags>
+        <spawnCategories>
+            <li>FCP_Backstory_Ghoul</li>
+        </spawnCategories>
+        <bodyTypeFemale>Fat</bodyTypeFemale>
+        <bodyTypeMale>Fat</bodyTypeMale>
+        <possessions />
+    </BackstoryDef>
+
+    <!-- Ghoul Chem Cook -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Ghoul_Chem_Cook</defName>
+        <identifier>FCP_Backstory_Ghoul_Chem_Cook</identifier>
+        <slot>Adulthood</slot>
+        <title>Chem Cook</title>
+        <titleShort>Chem Cook</titleShort>
+        <description>[PAWN_nameDef] spent years brewing chems in hidden labs. [PAWN_pronoun] knows the dangers of addiction and the value of a steady hand.</description>
+        <skillGains>
+            <Medicine>3</Medicine>
+            <Intellectual>2</Intellectual>
+            <Crafting>4</Crafting>
+        </skillGains>
+        <workDisables>Animals</workDisables>
+        <requiredWorkTags>None</requiredWorkTags>
+        <spawnCategories>
+            <li>FCP_Backstory_Ghoul</li>
+        </spawnCategories>
+        <bodyTypeFemale>Thin</bodyTypeFemale>
+        <bodyTypeMale>Thin</bodyTypeMale>
+        <possessions />
+    </BackstoryDef>
+
+    <!-- Ghoul Old World Teacher -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Ghoul_Teacher</defName>
+        <identifier>FCP_Backstory_Ghoul_Teacher</identifier>
+        <slot>Adulthood</slot>
+        <title>Old World Teacher</title>
+        <titleShort>Teacher</titleShort>
+        <description>Once a teacher in a pre-war school, [PAWN_nameDef] now tries to pass on knowledge to the next generation, even if few care to listen.</description>
+        <skillGains>
+            <Intellectual>4</Intellectual>
+            <Social>2</Social>
+            <Artistic>1</Artistic>
+        </skillGains>
+        <workDisables>Violent</workDisables>
+        <requiredWorkTags>None</requiredWorkTags>
+        <spawnCategories>
+            <li>FCP_Backstory_Ghoul</li>
+        </spawnCategories>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <possessions />
+    </BackstoryDef>
+
+    <!-- Ghoul Scrap Artist -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Ghoul_Scrap_Artist</defName>
+        <identifier>FCP_Backstory_Ghoul_Scrap_Artist</identifier>
+        <slot>Adulthood</slot>
+        <title>Scrap Artist</title>
+        <titleShort>Scrap Artist</titleShort>
+        <description>[PAWN_nameDef] turned junk into art, making sculptures from twisted metal and broken glass. [PAWN_pronoun] sees beauty where others see only ruin.</description>
+        <skillGains>
+            <Artistic>5</Artistic>
+            <Crafting>2</Crafting>
+            <Construction>1</Construction>
+        </skillGains>
+        <workDisables>Animals</workDisables>
+        <requiredWorkTags>None</requiredWorkTags>
+        <spawnCategories>
+            <li>FCP_Backstory_Ghoul</li>
+        </spawnCategories>
+        <bodyTypeFemale>Thin</bodyTypeFemale>
+        <bodyTypeMale>Thin</bodyTypeMale>
+        <possessions />
+    </BackstoryDef>
+
+    <!-- Ghoul Raider Outcast -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Ghoul_Raider_Outcast</defName>
+        <identifier>FCP_Backstory_Ghoul_Raider_Outcast</identifier>
+        <slot>Adulthood</slot>
+        <title>Raider Outcast</title>
+        <titleShort>Outcast</titleShort>
+        <description>[PAWN_nameDef] once ran with a vicious raider gang, but was cast out for being too different. [PAWN_pronoun] is tough, but trust is hard to earn.</description>
+        <skillGains>
+            <Melee>4</Melee>
+            <Shooting>2</Shooting>
+            <Social>-2</Social>
+        </skillGains>
+        <workDisables>Intellectual</workDisables>
+        <requiredWorkTags>None</requiredWorkTags>
+        <spawnCategories>
+            <li>FCP_Backstory_Ghoul</li>
+        </spawnCategories>
+        <bodyTypeFemale>Thin</bodyTypeFemale>
+        <bodyTypeMale>Thin</bodyTypeMale>
+        <possessions />
+    </BackstoryDef>
+
+    <!-- Ghoul Pre-war Bureaucrat -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Ghoul_Bureaucrat</defName>
+        <identifier>FCP_Backstory_Ghoul_Bureaucrat</identifier>
+        <slot>Adulthood</slot>
+        <title>Pre-war Bureaucrat</title>
+        <titleShort>Bureaucrat</titleShort>
+        <description>[PAWN_nameDef] shuffled papers in a government office before the bombs. Now, [PAWN_pronoun] uses [PAWN_possessive] organizational skills to keep settlements running.</description>
+        <skillGains>
+            <Intellectual>3</Intellectual>
+            <Social>2</Social>
+            <Artistic>1</Artistic>
+        </skillGains>
+        <workDisables>Violent</workDisables>
+        <requiredWorkTags>None</requiredWorkTags>
+        <spawnCategories>
+            <li>FCP_Backstory_Ghoul</li>
+        </spawnCategories>
+        <bodyTypeFemale>Fat</bodyTypeFemale>
+        <bodyTypeMale>Fat</bodyTypeMale>
+        <possessions />
+    </BackstoryDef>
+
+    <!-- Ghoul Rot Farmer -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Ghoul_Rot_Farmer</defName>
+        <identifier>FCP_Backstory_Ghoul_Rot_Farmer</identifier>
+        <slot>Adulthood</slot>
+        <title>Rot Farmer</title>
+        <titleShort>Rot Farmer</titleShort>
+        <description>[PAWN_nameDef] tended mutated crops in irradiated soil, growing food others wouldn't dare touch. [PAWN_pronoun] is hardy and knows how to survive on little.</description>
+        <skillGains>
+            <Plants>5</Plants>
+            <Medicine>2</Medicine>
+            <Construction>1</Construction>
+        </skillGains>
+        <workDisables>Artistic</workDisables>
+        <requiredWorkTags>None</requiredWorkTags>
+        <spawnCategories>
+            <li>FCP_Backstory_Ghoul</li>
+        </spawnCategories>
+        <bodyTypeFemale>Thin</bodyTypeFemale>
+        <bodyTypeMale>Thin</bodyTypeMale>
+        <possessions />
+    </BackstoryDef>
+
+    <!-- Ghoul Old World Cop -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Ghoul_Old_World_Cop</defName>
+        <identifier>FCP_Backstory_Ghoul_Old_World_Cop</identifier>
+        <slot>Adulthood</slot>
+        <title>Old World Cop</title>
+        <titleShort>Cop</titleShort>
+        <description>Before the war, [PAWN_nameDef] enforced the law. Now, [PAWN_pronoun] keeps order as best [PAWN_pronoun] can in a lawless world.</description>
+        <skillGains>
+            <Shooting>4</Shooting>
+            <Melee>3</Melee>
+            <Social>2</Social>
+        </skillGains>
+        <workDisables>Artistic</workDisables>
+        <requiredWorkTags>None</requiredWorkTags>
+        <spawnCategories>
+            <li>FCP_Backstory_Ghoul</li>
+        </spawnCategories>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <possessions />
+    </BackstoryDef>
+
+    <!-- Ghoul Vault Technician -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Ghoul_Vault_Technician</defName>
+        <identifier>FCP_Backstory_Ghoul_Vault_Technician</identifier>
+        <slot>Adulthood</slot>
+        <title>Vault Technician</title>
+        <titleShort>Vault Technician</titleShort>
+        <description>[PAWN_nameDef] maintained the vault's systems, keeping lights on and doors sealed. [PAWN_pronoun] is skilled with machines and electronics.</description>
+        <skillGains>
+            <Crafting>4</Crafting>
+            <Intellectual>2</Intellectual>
+            <Construction>2</Construction>
+        </skillGains>
+        <workDisables>Animals</workDisables>
+        <requiredWorkTags>None</requiredWorkTags>
+        <spawnCategories>
+            <li>FCP_Backstory_Ghoul</li>
+        </spawnCategories>
+        <bodyTypeFemale>Thin</bodyTypeFemale>
+        <bodyTypeMale>Thin</bodyTypeMale>
+        <possessions />
+    </BackstoryDef>
+
+    <!-- Ghoul Wasteland Preacher -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Ghoul_Preacher</defName>
+        <identifier>FCP_Backstory_Ghoul_Preacher</identifier>
+        <slot>Adulthood</slot>
+        <title>Wasteland Preacher</title>
+        <titleShort>Preacher</titleShort>
+        <description>[PAWN_nameDef] wandered the wastes, spreading hope and faith to those who would listen. [PAWN_pronoun] is a skilled orator and counselor.</description>
+        <skillGains>
+            <Social>5</Social>
+            <Intellectual>2</Intellectual>
+            <Medicine>1</Medicine>
+        </skillGains>
+        <workDisables>Violent</workDisables>
+        <requiredWorkTags>None</requiredWorkTags>
+        <spawnCategories>
+            <li>FCP_Backstory_Ghoul</li>
+        </spawnCategories>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <possessions />
+    </BackstoryDef>
+
+    <!-- Ghoul Feral Hunter -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Ghoul_Feral_Hunter</defName>
+        <identifier>FCP_Backstory_Ghoul_Feral_Hunter</identifier>
+        <slot>Adulthood</slot>
+        <title>Feral Hunter</title>
+        <titleShort>Feral Hunter</titleShort>
+        <description>[PAWN_nameDef] stalked the wilds, hunting mutated beasts for food and sport. [PAWN_pronoun] is fierce and knows how to track prey.</description>
+        <skillGains>
+            <Shooting>3</Shooting>
+            <Melee>4</Melee>
+            <Plants>2</Plants>
+        </skillGains>
+        <workDisables>Artistic</workDisables>
+        <requiredWorkTags>None</requiredWorkTags>
+        <spawnCategories>
+            <li>FCP_Backstory_Ghoul</li>
+        </spawnCategories>
+        <bodyTypeFemale>Thin</bodyTypeFemale>
+        <bodyTypeMale>Thin</bodyTypeMale>
+        <possessions />
+    </BackstoryDef>
+
+    <!-- Ghoul Radio Operator -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Ghoul_Radio_Operator</defName>
+        <identifier>FCP_Backstory_Ghoul_Radio_Operator</identifier>
+        <slot>Adulthood</slot>
+        <title>Radio Operator</title>
+        <titleShort>Radio Op</titleShort>
+        <description>[PAWN_nameDef] spent years maintaining and operating old-world radio towers, relaying messages across the wastes. [PAWN_pronoun] is skilled with electronics and communication.</description>
+        <skillGains>
+            <Intellectual>3</Intellectual>
+            <Crafting>2</Crafting>
+            <Social>2</Social>
+        </skillGains>
+        <workDisables>Animals</workDisables>
+        <requiredWorkTags>None</requiredWorkTags>
+        <spawnCategories>
+            <li>FCP_Backstory_Ghoul</li>
+        </spawnCategories>
+        <bodyTypeFemale>Thin</bodyTypeFemale>
+        <bodyTypeMale>Thin</bodyTypeMale>
+        <possessions />
+    </BackstoryDef>
+
+    <!-- Ghoul Relic Hunter -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Ghoul_Relic_Hunter</defName>
+        <identifier>FCP_Backstory_Ghoul_Relic_Hunter</identifier>
+        <slot>Adulthood</slot>
+        <title>Relic Hunter</title>
+        <titleShort>Relic Hunter</titleShort>
+        <description>[PAWN_nameDef] scoured ruins for valuable pre-war artifacts, trading them for supplies. [PAWN_pronoun] has a keen eye for hidden treasures.</description>
+        <skillGains>
+            <Intellectual>2</Intellectual>
+            <Social>2</Social>
+            <Crafting>3</Crafting>
+        </skillGains>
+        <workDisables>Animals</workDisables>
+        <requiredWorkTags>None</requiredWorkTags>
+        <spawnCategories>
+            <li>FCP_Backstory_Ghoul</li>
+        </spawnCategories>
+        <bodyTypeFemale>Thin</bodyTypeFemale>
+        <bodyTypeMale>Thin</bodyTypeMale>
+        <possessions />
+    </BackstoryDef>
+
+    <!-- Ghoul Mutant Wrangler -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Ghoul_Mutant_Wrangler</defName>
+        <identifier>FCP_Backstory_Ghoul_Mutant_Wrangler</identifier>
+        <slot>Adulthood</slot>
+        <title>Mutant Wrangler</title>
+        <titleShort>Wrangler</titleShort>
+        <description>[PAWN_nameDef] specialized in capturing and taming mutated creatures for settlements and traders. [PAWN_pronoun] is fearless around beasts.</description>
+        <skillGains>
+            <Animals>5</Animals>
+            <Melee>2</Melee>
+            <Plants>1</Plants>
+        </skillGains>
+        <workDisables>Artistic</workDisables>
+        <requiredWorkTags>None</requiredWorkTags>
+        <spawnCategories>
+            <li>FCP_Backstory_Ghoul</li>
+        </spawnCategories>
+        <bodyTypeFemale>Thin</bodyTypeFemale>
+        <bodyTypeMale>Thin</bodyTypeMale>
+        <possessions />
+    </BackstoryDef>
+
+    <!-- Ghoul Old World Chef -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Ghoul_Old_World_Chef</defName>
+        <identifier>FCP_Backstory_Ghoul_Old_World_Chef</identifier>
+        <slot>Adulthood</slot>
+        <title>Old World Chef</title>
+        <titleShort>Chef</titleShort>
+        <description>Before the war, [PAWN_nameDef] was a renowned chef. Now, [PAWN_pronoun] makes the best of wasteland ingredients to feed survivors.</description>
+        <skillGains>
+            <Cooking>6</Cooking>
+            <Social>2</Social>
+            <Artistic>1</Artistic>
+        </skillGains>
+        <workDisables>Animals</workDisables>
+        <requiredWorkTags>None</requiredWorkTags>
+        <spawnCategories>
+            <li>FCP_Backstory_Ghoul</li>
+        </spawnCategories>
+        <bodyTypeFemale>Fat</bodyTypeFemale>
+        <bodyTypeMale>Fat</bodyTypeMale>
+        <possessions />
+    </BackstoryDef>
+
+    <!-- Ghoul Scrap Merchant -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Ghoul_Scrap_Merchant</defName>
+        <identifier>FCP_Backstory_Ghoul_Scrap_Merchant</identifier>
+        <slot>Adulthood</slot>
+        <title>Scrap Merchant</title>
+        <titleShort>Merchant</titleShort>
+        <description>[PAWN_nameDef] bought and sold scrap, bartering with travelers and settlements. [PAWN_pronoun] knows the value of everything and the price of trust.</description>
+        <skillGains>
+            <Social>4</Social>
+            <Crafting>2</Crafting>
+            <Intellectual>1</Intellectual>
+        </skillGains>
+        <workDisables>Animals</workDisables>
+        <requiredWorkTags>None</requiredWorkTags>
+        <spawnCategories>
+            <li>FCP_Backstory_Ghoul</li>
+        </spawnCategories>
+        <bodyTypeFemale>Thin</bodyTypeFemale>
+        <bodyTypeMale>Thin</bodyTypeMale>
+        <possessions />
+    </BackstoryDef>
+
+    <!-- Ghoul Grave Robber -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Ghoul_Grave_Robber</defName>
+        <identifier>FCP_Backstory_Ghoul_Grave_Robber</identifier>
+        <slot>Adulthood</slot>
+        <title>Grave Robber</title>
+        <titleShort>Grave Robber</titleShort>
+        <description>[PAWN_nameDef] made a living digging up graves and looting the dead. [PAWN_pronoun] is skilled at moving quietly and finding hidden things.</description>
+        <skillGains>
+            <Mining>3</Mining>
+            <Plants>1</Plants>
+        </skillGains>
+        <workDisables>Social</workDisables>
+        <requiredWorkTags>None</requiredWorkTags>
+        <spawnCategories>
+            <li>FCP_Backstory_Ghoul</li>
+        </spawnCategories>
+        <bodyTypeFemale>Thin</bodyTypeFemale>
+        <bodyTypeMale>Thin</bodyTypeMale>
+        <possessions />
+    </BackstoryDef>
+
+    <!-- Ghoul Old World Actor -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Ghoul_Actor</defName>
+        <identifier>FCP_Backstory_Ghoul_Actor</identifier>
+        <slot>Adulthood</slot>
+        <title>Old World Actor</title>
+        <titleShort>Actor</titleShort>
+        <description>[PAWN_nameDef] once performed on stage and screen. Now, [PAWN_pronoun] entertains with stories and impersonations of a lost world.</description>
+        <skillGains>
+            <Artistic>5</Artistic>
+            <Social>3</Social>
+            <Intellectual>1</Intellectual>
+        </skillGains>
+        <workDisables>Violent</workDisables>
+        <requiredWorkTags>None</requiredWorkTags>
+        <spawnCategories>
+            <li>FCP_Backstory_Ghoul</li>
+        </spawnCategories>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <possessions />
+    </BackstoryDef>
+
+    <!-- Ghoul Tunnel Dweller -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Ghoul_Tunnel_Dweller</defName>
+        <identifier>FCP_Backstory_Ghoul_Tunnel_Dweller</identifier>
+        <slot>Adulthood</slot>
+        <title>Tunnel Dweller</title>
+        <titleShort>Tunnel Dweller</titleShort>
+        <description>[PAWN_nameDef] lived for decades in the dark tunnels beneath ruined cities, emerging only when necessary. [PAWN_pronoun] is used to darkness and silence.</description>
+        <skillGains>
+            <Mining>5</Mining>
+            <Plants>2</Plants>
+        </skillGains>
+        <workDisables>Social</workDisables>
+        <requiredWorkTags>None</requiredWorkTags>
+        <spawnCategories>
+            <li>FCP_Backstory_Ghoul</li>
+        </spawnCategories>
+        <bodyTypeFemale>Thin</bodyTypeFemale>
+        <bodyTypeMale>Thin</bodyTypeMale>
+        <possessions />
+    </BackstoryDef>
+
+    <!-- Ghoul Old World Nurse -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Ghoul_Nurse</defName>
+        <identifier>FCP_Backstory_Ghoul_Nurse</identifier>
+        <slot>Adulthood</slot>
+        <title>Old World Nurse</title>
+        <titleShort>Nurse</titleShort>
+        <description>[PAWN_nameDef] cared for the sick and wounded before the bombs. [PAWN_pronoun] still tends to the injured, using both old and new techniques.</description>
+        <skillGains>
+            <Medicine>5</Medicine>
+            <Social>2</Social>
+            <Plants>1</Plants>
+        </skillGains>
+        <workDisables>Violent</workDisables>
+        <requiredWorkTags>None</requiredWorkTags>
+        <spawnCategories>
+            <li>FCP_Backstory_Ghoul</li>
+        </spawnCategories>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <possessions />
+    </BackstoryDef>
+
+    <!-- Ghoul Scrap Sculptor -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Ghoul_Scrap_Sculptor</defName>
+        <identifier>FCP_Backstory_Ghoul_Scrap_Sculptor</identifier>
+        <slot>Adulthood</slot>
+        <title>Scrap Sculptor</title>
+        <titleShort>Sculptor</titleShort>
+        <description>[PAWN_nameDef] welded together art from the ruins, creating beauty from destruction. [PAWN_pronoun] is creative and skilled with tools.</description>
+        <skillGains>
+            <Artistic>6</Artistic>
+            <Crafting>3</Crafting>
+            <Construction>1</Construction>
+        </skillGains>
+        <workDisables>Animals</workDisables>
+        <requiredWorkTags>None</requiredWorkTags>
+        <spawnCategories>
+            <li>FCP_Backstory_Ghoul</li>
+        </spawnCategories>
+        <bodyTypeFemale>Thin</bodyTypeFemale>
+        <bodyTypeMale>Thin</bodyTypeMale>
+        <possessions />
+    </BackstoryDef>
+
+    <!--___ Glowing One Adults ___-->
+
+    <!-- Rad Shaman -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Glowing_One_Rad_Shaman</defName>
+        <identifier>FCP_Backstory_Glowing_One_Rad_Shaman</identifier>
+        <slot>Adulthood</slot>
+        <title>Rad Shaman</title>
+        <titleShort>Rad Shaman</titleShort>
+        <description>[PAWN_nameDef] was revered among ghouls for [PAWN_possessive] ability to withstand and channel radiation. [PAWN_pronoun] guided others through the most irradiated places, believing the glow was a blessing.</description>
+        <skillGains>
+            <Social>4</Social>
+            <Medicine>3</Medicine>
+            <Plants>2</Plants>
+        </skillGains>
+        <workDisables>Animals</workDisables>
+        <requiredWorkTags>None</requiredWorkTags>
+        <spawnCategories>
+            <li>FCP_Backstory_Glowing_One</li>
+        </spawnCategories>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <possessions />
+    </BackstoryDef>
+
+    <!-- Radstorm Survivor -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Glowing_One_Radstorm_Survivor</defName>
+        <identifier>FCP_Backstory_Glowing_One_Radstorm_Survivor</identifier>
+        <slot>Adulthood</slot>
+        <title>Radstorm Survivor</title>
+        <titleShort>Radstormed</titleShort>
+        <description>[PAWN_nameDef] survived a catastrophic radstorm that would have killed most. The experience left [PAWN_pronoun] glowing and forever changed, but also strangely invigorated.</description>
+        <skillGains>
+            <Melee>3</Melee>
+            <Plants>2</Plants>
+            <Medicine>2</Medicine>
+        </skillGains>
+        <workDisables>Artistic</workDisables>
+        <requiredWorkTags>None</requiredWorkTags>
+        <spawnCategories>
+            <li>FCP_Backstory_Glowing_One</li>
+        </spawnCategories>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <possessions />
+    </BackstoryDef>
+
+    <!-- Irradiated Healer -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Glowing_One_Irradiated_Healer</defName>
+        <identifier>FCP_Backstory_Glowing_One_Irradiated_Healer</identifier>
+        <slot>Adulthood</slot>
+        <title>Irradiated Healer</title>
+        <titleShort>Healer</titleShort>
+        <description>[PAWN_nameDef] learned to use [PAWN_possessive] own radioactive touch to heal other ghouls, easing their pain and closing wounds with a strange, glowing energy.</description>
+        <skillGains>
+            <Medicine>6</Medicine>
+            <Social>2</Social>
+            <Intellectual>1</Intellectual>
+        </skillGains>
+        <workDisables>Violent</workDisables>
+        <requiredWorkTags>None</requiredWorkTags>
+        <spawnCategories>
+            <li>FCP_Backstory_Glowing_One</li>
+        </spawnCategories>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <possessions />
+    </BackstoryDef>
+
+    <!-- Rad Cultist -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Glowing_One_Rad_Cultist</defName>
+        <identifier>FCP_Backstory_Glowing_One_Rad_Cultist</identifier>
+        <slot>Adulthood</slot>
+        <title>Rad Cultist</title>
+        <titleShort>Cultist</titleShort>
+        <description>[PAWN_nameDef] worshipped the glow, preaching to others about the cleansing power of radiation. [PAWN_pronoun] is zealous and persuasive, but sometimes unhinged.</description>
+        <skillGains>
+            <Social>5</Social>
+            <Intellectual>2</Intellectual>
+            <Artistic>1</Artistic>
+        </skillGains>
+        <workDisables>Animals</workDisables>
+        <requiredWorkTags>None</requiredWorkTags>
+        <spawnCategories>
+            <li>FCP_Backstory_Glowing_One</li>
+        </spawnCategories>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <possessions />
+    </BackstoryDef>
+
+    <!-- Rad Warden -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Glowing_One_Rad_Warden</defName>
+        <identifier>FCP_Backstory_Glowing_One_Rad_Warden</identifier>
+        <slot>Adulthood</slot>
+        <title>Rad Warden</title>
+        <titleShort>Warden</titleShort>
+        <description>[PAWN_nameDef] guarded the entrances to highly irradiated zones, warning or driving off those who could not survive the glow. [PAWN_pronoun] is vigilant and intimidating.</description>
+        <skillGains>
+            <Melee>4</Melee>
+            <Shooting>2</Shooting>
+            <Social>1</Social>
+        </skillGains>
+        <workDisables>Artistic</workDisables>
+        <requiredWorkTags>None</requiredWorkTags>
+        <spawnCategories>
+            <li>FCP_Backstory_Glowing_One</li>
+        </spawnCategories>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <possessions />
+    </BackstoryDef>
+
+    <!-- Rad Prophet -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Glowing_One_Rad_Prophet</defName>
+        <identifier>FCP_Backstory_Glowing_One_Rad_Prophet</identifier>
+        <slot>Adulthood</slot>
+        <title>Rad Prophet</title>
+        <titleShort>Prophet</titleShort>
+        <description>[PAWN_nameDef] claimed to receive visions from the radioactive storms, guiding others with cryptic warnings and prophecies.</description>
+        <skillGains>
+            <Intellectual>4</Intellectual>
+            <Social>3</Social>
+            <Artistic>2</Artistic>
+        </skillGains>
+        <workDisables>Violent</workDisables>
+        <requiredWorkTags>None</requiredWorkTags>
+        <spawnCategories>
+            <li>FCP_Backstory_Glowing_One</li>
+        </spawnCategories>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <possessions />
+    </BackstoryDef>
+
+    <!-- Rad Shepherd -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Glowing_One_Rad_Shepherd</defName>
+        <identifier>FCP_Backstory_Glowing_One_Rad_Shepherd</identifier>
+        <slot>Adulthood</slot>
+        <title>Rad Shepherd</title>
+        <titleShort>Shepherd</titleShort>
+        <description>[PAWN_nameDef] led groups of ghouls through the most dangerous, glowing wastelands, keeping them safe from both radiation and predators.</description>
+        <skillGains>
+            <Animals>3</Animals>
+            <Plants>3</Plants>
+            <Social>2</Social>
+        </skillGains>
+        <workDisables>Artistic</workDisables>
+        <requiredWorkTags>None</requiredWorkTags>
+        <spawnCategories>
+            <li>FCP_Backstory_Glowing_One</li>
+        </spawnCategories>
+        <bodyTypeFemale>Thin</bodyTypeFemale>
+        <bodyTypeMale>Thin</bodyTypeMale>
+        <possessions />
+    </BackstoryDef>
+
+    <!-- Rad Hermit -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Glowing_One_Rad_Hermit</defName>
+        <identifier>FCP_Backstory_Glowing_One_Rad_Hermit</identifier>
+        <slot>Adulthood</slot>
+        <title>Rad Hermit</title>
+        <titleShort>Hermit</titleShort>
+        <description>[PAWN_nameDef] lived alone in a radioactive crater, shunned by others but at peace with the glow. [PAWN_pronoun] is self-sufficient and rarely speaks.</description>
+        <skillGains>
+            <Plants>4</Plants>
+            <Construction>2</Construction>
+            <Social>-2</Social>
+        </skillGains>
+        <workDisables>Animals</workDisables>
+        <requiredWorkTags>None</requiredWorkTags>
+        <spawnCategories>
+            <li>FCP_Backstory_Glowing_One</li>
+        </spawnCategories>
+        <bodyTypeFemale>Thin</bodyTypeFemale>
+        <bodyTypeMale>Thin</bodyTypeMale>
+        <possessions />
+    </BackstoryDef>
+
+    <!-- Rad Pilgrim -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Glowing_One_Rad_Pilgrim</defName>
+        <identifier>FCP_Backstory_Glowing_One_Rad_Pilgrim</identifier>
+        <slot>Adulthood</slot>
+        <title>Rad Pilgrim</title>
+        <titleShort>Pilgrim</titleShort>
+        <description>[PAWN_nameDef] wandered the world seeking places of great radiation, believing each journey brought [PAWN_pronoun] closer to enlightenment.</description>
+        <skillGains>
+            <Plants>2</Plants>
+            <Intellectual>3</Intellectual>
+            <Social>2</Social>
+        </skillGains>
+        <workDisables>Artistic</workDisables>
+        <requiredWorkTags>None</requiredWorkTags>
+        <spawnCategories>
+            <li>FCP_Backstory_Glowing_One</li>
+        </spawnCategories>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <possessions />
+    </BackstoryDef>
+
+    <!-- Rad Outcast -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Glowing_One_Rad_Outcast</defName>
+        <identifier>FCP_Backstory_Glowing_One_Rad_Outcast</identifier>
+        <slot>Adulthood</slot>
+        <title>Rad Outcast</title>
+        <titleShort>Outcast</titleShort>
+        <description>Feared even by other ghouls, [PAWN_nameDef] was forced to live on the fringes of society, surviving on whatever [PAWN_pronoun] could scavenge from the most irradiated ruins.</description>
+        <skillGains>
+            <Melee>3</Melee>
+            <Plants>2</Plants>
+            <Social>-3</Social>
+        </skillGains>
+        <workDisables>Intellectual, Artistic</workDisables>
+        <requiredWorkTags>None</requiredWorkTags>
+        <spawnCategories>
+            <li>FCP_Backstory_Glowing_One</li>
+        </spawnCategories>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <possessions />
+    </BackstoryDef>
+
+    <!-- Rad Mystic -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Glowing_One_Rad_Mystic</defName>
+        <identifier>FCP_Backstory_Glowing_One_Rad_Mystic</identifier>
+        <slot>Adulthood</slot>
+        <title>Rad Mystic</title>
+        <titleShort>Mystic</titleShort>
+        <description>[PAWN_nameDef] claimed to see visions in the radioactive haze, interpreting omens for fellow ghouls. [PAWN_pronoun] is respected for [PAWN_possessive] insight and strange wisdom.</description>
+        <skillGains>
+            <Intellectual>4</Intellectual>
+            <Artistic>2</Artistic>
+            <Social>2</Social>
+        </skillGains>
+        <workDisables>Violent</workDisables>
+        <requiredWorkTags>None</requiredWorkTags>
+        <spawnCategories>
+            <li>FCP_Backstory_Glowing_One</li>
+        </spawnCategories>
+        <bodyTypeFemale>Thin</bodyTypeFemale>
+        <bodyTypeMale>Thin</bodyTypeMale>
+        <possessions />
+    </BackstoryDef>
+
+    <!-- Glow Cult Guardian -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Glowing_One_Cult_Guardian</defName>
+        <identifier>FCP_Backstory_Glowing_One_Cult_Guardian</identifier>
+        <slot>Adulthood</slot>
+        <title>Cult Guardian</title>
+        <titleShort>Guardian</titleShort>
+        <description>[PAWN_nameDef] protected a secretive cult devoted to the glow, using [PAWN_possessive] strength to keep outsiders at bay and defend sacred sites.</description>
+        <skillGains>
+            <Melee>5</Melee>
+            <Shooting>2</Shooting>
+            <Social>1</Social>
+        </skillGains>
+        <workDisables>Artistic</workDisables>
+        <requiredWorkTags>None</requiredWorkTags>
+        <spawnCategories>
+            <li>FCP_Backstory_Glowing_One</li>
+        </spawnCategories>
+        <bodyTypeFemale>Hulk</bodyTypeFemale>
+        <bodyTypeMale>Hulk</bodyTypeMale>
+        <possessions />
+    </BackstoryDef>
+
+    <!-- Glow Zone Forager -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Glowing_One_Zone_Forager</defName>
+        <identifier>FCP_Backstory_Glowing_One_Zone_Forager</identifier>
+        <slot>Adulthood</slot>
+        <title>Zone Forager</title>
+        <titleShort>Forager</titleShort>
+        <description>[PAWN_nameDef] survived by gathering edible plants and fungi from the most irradiated places, where only the glowing dare tread.</description>
+        <skillGains>
+            <Plants>5</Plants>
+            <Medicine>2</Medicine>
+            <Crafting>1</Crafting>
+        </skillGains>
+        <workDisables>Social</workDisables>
+        <requiredWorkTags>None</requiredWorkTags>
+        <spawnCategories>
+            <li>FCP_Backstory_Glowing_One</li>
+        </spawnCategories>
+        <bodyTypeFemale>Thin</bodyTypeFemale>
+        <bodyTypeMale>Thin</bodyTypeMale>
+        <possessions />
+    </BackstoryDef>
+
+    <!-- Glowlight Scout -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Glowing_One_Glowlight_Scout</defName>
+        <identifier>FCP_Backstory_Glowing_One_Glowlight_Scout</identifier>
+        <slot>Adulthood</slot>
+        <title>Glowlight Scout</title>
+        <titleShort>Scout</titleShort>
+        <description>[PAWN_nameDef] was sent ahead of ghoul groups to scout out safe paths through radioactive wastelands, using [PAWN_possessive] glow as a beacon in the dark.</description>
+        <skillGains>
+            <Plants>2</Plants>
+            <Shooting>2</Shooting>
+        </skillGains>
+        <workDisables>Artistic</workDisables>
+        <requiredWorkTags>None</requiredWorkTags>
+        <spawnCategories>
+            <li>FCP_Backstory_Glowing_One</li>
+        </spawnCategories>
+        <bodyTypeFemale>Thin</bodyTypeFemale>
+        <bodyTypeMale>Thin</bodyTypeMale>
+        <possessions />
+    </BackstoryDef>
+
+    <!-- Glow Shrine Keeper -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Glowing_One_Shrine_Keeper</defName>
+        <identifier>FCP_Backstory_Glowing_One_Shrine_Keeper</identifier>
+        <slot>Adulthood</slot>
+        <title>Shrine Keeper</title>
+        <titleShort>Shrine Keeper</titleShort>
+        <description>[PAWN_nameDef] maintained a shrine deep within a glowing crater, tending to relics and performing rituals for visiting ghouls.</description>
+        <skillGains>
+            <Artistic>4</Artistic>
+            <Social>3</Social>
+            <Plants>1</Plants>
+        </skillGains>
+        <workDisables>Violent</workDisables>
+        <requiredWorkTags>None</requiredWorkTags>
+        <spawnCategories>
+            <li>FCP_Backstory_Glowing_One</li>
+        </spawnCategories>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <possessions />
+    </BackstoryDef>
+
+    <!-- Glow Zone Hermit -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Glowing_One_Zone_Hermit</defName>
+        <identifier>FCP_Backstory_Glowing_One_Zone_Hermit</identifier>
+        <slot>Adulthood</slot>
+        <title>Zone Hermit</title>
+        <titleShort>Zone Hermit</titleShort>
+        <description>[PAWN_nameDef] lived alone in the heart of a radioactive wasteland, rarely seeing another soul. [PAWN_pronoun] is self-reliant and wary of outsiders.</description>
+        <skillGains>
+            <Plants>3</Plants>
+            <Construction>2</Construction>
+            <Social>-2</Social>
+        </skillGains>
+        <workDisables>Animals</workDisables>
+        <requiredWorkTags>None</requiredWorkTags>
+        <spawnCategories>
+            <li>FCP_Backstory_Glowing_One</li>
+        </spawnCategories>
+        <bodyTypeFemale>Thin</bodyTypeFemale>
+        <bodyTypeMale>Thin</bodyTypeMale>
+        <possessions />
+    </BackstoryDef>
+
+    <!-- Glow Zone Guide -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Glowing_One_Zone_Guide</defName>
+        <identifier>FCP_Backstory_Glowing_One_Zone_Guide</identifier>
+        <slot>Adulthood</slot>
+        <title>Zone Guide</title>
+        <titleShort>Guide</titleShort>
+        <description>[PAWN_nameDef] led non-ghouls through dangerous glowing zones, charging a hefty fee for [PAWN_possessive] expertise and protection.</description>
+        <skillGains>
+            <Social>4</Social>
+            <Plants>2</Plants>
+            <Medicine>2</Medicine>
+        </skillGains>
+        <workDisables>Artistic</workDisables>
+        <requiredWorkTags>None</requiredWorkTags>
+        <spawnCategories>
+            <li>FCP_Backstory_Glowing_One</li>
+        </spawnCategories>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <possessions />
+    </BackstoryDef>
+
+    <!-- Glow Zone Scavenger -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Glowing_One_Zone_Scavenger</defName>
+        <identifier>FCP_Backstory_Glowing_One_Zone_Scavenger</identifier>
+        <slot>Adulthood</slot>
+        <title>Zone Scavenger</title>
+        <titleShort>Scavenger</titleShort>
+        <description>[PAWN_nameDef] braved the most radioactive ruins to recover valuable salvage, risking [PAWN_possessive] life for rare technology and supplies.</description>
+        <skillGains>
+            <Crafting>4</Crafting>
+            <Plants>2</Plants>
+            <Melee>2</Melee>
+        </skillGains>
+        <workDisables>Social</workDisables>
+        <requiredWorkTags>None</requiredWorkTags>
+        <spawnCategories>
+            <li>FCP_Backstory_Glowing_One</li>
+        </spawnCategories>
+        <bodyTypeFemale>Thin</bodyTypeFemale>
+        <bodyTypeMale>Thin</bodyTypeMale>
+        <possessions />
+    </BackstoryDef>
+
+    <!-- Glow Zone Herbalist -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Glowing_One_Zone_Herbalist</defName>
+        <identifier>FCP_Backstory_Glowing_One_Zone_Herbalist</identifier>
+        <slot>Adulthood</slot>
+        <title>Zone Herbalist</title>
+        <titleShort>Herbalist</titleShort>
+        <description>[PAWN_nameDef] learned to identify and use rare, mutated plants found only in radioactive zones, brewing potent medicines and poisons.</description>
+        <skillGains>
+            <Plants>5</Plants>
+            <Medicine>3</Medicine>
+            <Intellectual>1</Intellectual>
+        </skillGains>
+        <workDisables>Violent</workDisables>
+        <requiredWorkTags>None</requiredWorkTags>
+        <spawnCategories>
+            <li>FCP_Backstory_Glowing_One</li>
+        </spawnCategories>
+        <bodyTypeFemale>Thin</bodyTypeFemale>
+        <bodyTypeMale>Thin</bodyTypeMale>
+        <possessions />
+    </BackstoryDef>
+
+    <!-- Glow Zone Outlaw -->
+
+    <BackstoryDef>
+        <defName>FCP_Backstory_Glowing_One_Zone_Outlaw</defName>
+        <identifier>FCP_Backstory_Glowing_One_Zone_Outlaw</identifier>
+        <slot>Adulthood</slot>
+        <title>Zone Outlaw</title>
+        <titleShort>Outlaw</titleShort>
+        <description>Banished from settlements, [PAWN_nameDef] survived by raiding travelers and hiding in radioactive ruins where few would follow.</description>
+        <skillGains>
+            <Melee>4</Melee>
+            <Shooting>2</Shooting>
+            <Plants>2</Plants>
+        </skillGains>
+        <workDisables>Intellectual</workDisables>
+        <requiredWorkTags>None</requiredWorkTags>
+        <spawnCategories>
+            <li>FCP_Backstory_Glowing_One</li>
+        </spawnCategories>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <possessions />
+    </BackstoryDef>
+
+</Defs>
