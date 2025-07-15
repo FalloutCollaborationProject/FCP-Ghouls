@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-    <!--__________ Ghoul Skin Genes __________-->
-
-    <!--_____ Skins _____-->
-
-    <!-- Skin A (Light yellow-green) -->
-
-    <GeneDef ParentName="GeneSkinColorOverride">
+    <!--<GeneDef ParentName="GeneSkinColorOverride">
         <defName>FCP_Skin_Ghoul_A</defName>
         <label>Light yellow-green shade skin</label>
         <labelShortAdj>light yellow-green shade skin</labelShortAdj>
@@ -27,12 +21,7 @@
                 </li>
             </suffixSymbols>
         </symbolPack>
-        <modExtensions>
-            <li Class="FCP_Ghoul.SkinA_ModExtension" />
-        </modExtensions>
     </GeneDef>
-
-    <!-- Skin B (light peach) -->
 
     <GeneDef ParentName="GeneSkinColorOverride">
         <defName>FCP_Skin_Ghoul_B</defName>
@@ -54,12 +43,7 @@
                 </li>
             </suffixSymbols>
         </symbolPack>
-        <modExtensions>
-            <li Class="FCP_Ghoul.SkinB_ModExtension" />
-        </modExtensions>
     </GeneDef>
-
-    <!-- Skin C (pale golden beige) -->
 
     <GeneDef ParentName="GeneSkinColorOverride">
         <defName>FCP_Skin_Ghoul_C</defName>
@@ -81,12 +65,7 @@
                 </li>
             </suffixSymbols>
         </symbolPack>
-        <modExtensions>
-            <li Class="FCP_Ghoul.SkinC_ModExtension" />
-        </modExtensions>
     </GeneDef>
-
-    <!-- Skin D (pale beige) -->
 
     <GeneDef ParentName="GeneSkinColorOverride">
         <defName>FCP_Skin_Ghoul_D</defName>
@@ -108,12 +87,7 @@
                 </li>
             </suffixSymbols>
         </symbolPack>
-        <modExtensions>
-            <li Class="FCP_Ghoul.SkinD_ModExtension" />
-        </modExtensions>
     </GeneDef>
-
-    <!-- Skin E (pale ochre) -->
 
     <GeneDef ParentName="GeneSkinColorOverride">
         <defName>FCP_Skin_Ghoul_E</defName>
@@ -135,12 +109,7 @@
                 </li>
             </suffixSymbols>
         </symbolPack>
-        <modExtensions>
-            <li Class="FCP_Ghoul.SkinE_ModExtension" />
-        </modExtensions>
     </GeneDef>
-
-    <!-- Skin F ( feral very light peach) -->
 
     <GeneDef ParentName="GeneSkinColorOverride">
         <defName>FCP_Skin_Ghoul_Feral</defName>
@@ -162,9 +131,6 @@
                 </li>
             </suffixSymbols>
         </symbolPack>
-        <modExtensions>
-            <li Class="FCP_Ghoul.SkinFeral_ModExtension" />
-        </modExtensions>
-    </GeneDef>
+    </GeneDef>-->
 
 </Defs>
