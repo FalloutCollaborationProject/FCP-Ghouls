@@ -35,8 +35,8 @@
         </renderNodeProperties>
         <modExtensions>
             <li Class="FCP_Ghoul.ToxBomb_ModExtension">
-                <radius>0.9</radius>
-                <rate>4</rate>
+                <radius>0</radius>
+                <rate>99999</rate>
             </li>
             <li Class="FCP_Ghoul.FeralFur_ModExtension"/>
         </modExtensions>
