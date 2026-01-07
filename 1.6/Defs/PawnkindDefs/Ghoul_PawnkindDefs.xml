@@ -13,7 +13,11 @@
         <combatPower>30</combatPower>
         <itemQuality>Poor</itemQuality>
         <gearHealthRange>0.5~1.8</gearHealthRange>
-        <apparelMoney>600~1000</apparelMoney>
+        <apparelMoney>800~1200</apparelMoney>
+        <apparelTags>
+            <li>FCP_Wastelander_Apparel</li>
+        </apparelTags>
+        <apparelAllowHeadgearChance>0.5</apparelAllowHeadgearChance>
         <weaponMoney>600</weaponMoney>
         <weaponTags>
             <li>FCP_Basic_Weapons</li>
@@ -47,11 +51,15 @@
 
     <PawnKindDef ParentName="FCP_Glowing_OnekindBase">
         <defName>FCP_Pawnkind_Glowing_One_Wastelander</defName>
-        <label>Ghoul</label>
+        <label>Glowing One</label>
         <combatPower>30</combatPower>
         <itemQuality>Poor</itemQuality>
         <gearHealthRange>0.5~1.8</gearHealthRange>
-        <apparelMoney>600~1000</apparelMoney>
+        <apparelMoney>800~1200</apparelMoney>
+        <apparelTags>
+            <li>FCP_Wastelander_Apparel</li>
+        </apparelTags>
+        <apparelAllowHeadgearChance>0.5</apparelAllowHeadgearChance>
         <weaponMoney>600</weaponMoney>
         <weaponTags>
             <li>FCP_Basic_Weapons</li>

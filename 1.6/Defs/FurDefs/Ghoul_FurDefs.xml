@@ -27,6 +27,8 @@
 			<Female>FCP_Ghoul/Bodies/Naked_Female</Female>
 			<Hulk>FCP_Ghoul/Bodies/Naked_Hulk</Hulk>
 			<Thin>FCP_Ghoul/Bodies/Naked_Thin</Thin>
+			<Fat>FCP_Ghoul/Bodies/Naked_Fat</Fat>
+			<Child>FCP_Ghoul/Bodies/Naked_Child</Child>
 		</bodyTypeGraphicPaths>
 	</FurDef>
 

@@ -64,12 +64,17 @@
         <renderNodeProperties>
             <li>
                 <nodeClass>FCP_Ghoul.PawnRenderNode_CustomColor</nodeClass>
-                <!--<nodeClass>PawnRenderNode_Fur</nodeClass>-->
                 <workerClass>FCP_Ghoul.PawnRenderNodeWorker_CustomColor</workerClass>
                 <baseLayer>5</baseLayer>
                 <rotDrawMode>Fresh, Rotting</rotDrawMode>
                 <colorType>Skin</colorType>
                 <parentTagDef>Body</parentTagDef>
+                <useSkinShader>true</useSkinShader>
+                <drawData>
+                    <defaultData>
+                        <layer>5</layer>
+                    </defaultData>
+                </drawData>
             </li>
         </renderNodeProperties>
         <modExtensions>
