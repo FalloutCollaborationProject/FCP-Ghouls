@@ -19,7 +19,6 @@
             <li>FCP_Gene_Ghoul_Head</li>
 			<li>ToxicEnvironmentResistance_Total</li>
 			<li>FCP_Gene_ToxHeal</li>
-			<li>FCP_Gene_Ghoul_Ferality</li>
 			<li>FCP_Skin_Ghoul_E</li>
 			<li>FCP_Skin_Ghoul_A</li>
 			<li>FCP_Skin_Ghoul_B</li>
@@ -33,12 +32,12 @@
 
 	<!-- Glowing One Ghouls -->
 
-    <XenotypeDef>
+    <!-- <XenotypeDef>
 		<defName>FCP_Xenotype_Ghoul_Glowing_One</defName>
 		<label>Glowing One</label>
     	<description>Glowing Ones are rare ghouls whose bodies emit a radioactive glow. Their intense radiation heals other ghouls and harms the living, making them both feared and revered among their kind. Exposure to extreme radiation has granted them powerful regenerative abilities, but further alienated them from humanity.</description>
     	<descriptionShort>A highly irradiated ghoul that emits radiation, healing other ghouls and damaging the living.</descriptionShort>
-		<iconPath>UI/Icons/Xenotypes/FCP_Glowing_One_Xenotype</iconPath>
+		<iconPath>UI/Icons/Xenotypes/FCP_Ghoul_Xenotype</iconPath>
 		<inheritable>false</inheritable>
 		<genes>
 			<li>Sterile</li>
@@ -47,7 +46,6 @@
             <li>FCP_Gene_Ghoul_Head</li>
 			<li>ToxicEnvironmentResistance_Total</li>
 			<li>FCP_Gene_ToxHeal</li>
-			<li>FCP_Gene_Ghoul_Ferality</li>
 			<li>FCP_Gene_Ghoul_Glow</li>
 			<li>FCP_Skin_Ghoul_E</li>
 			<li>FCP_Skin_Ghoul_A</li>
@@ -58,6 +56,6 @@
 		<modExtensions>
 			<li Class="FCP_Ghoul.TurnFeral_ModExtension"></li>
 		</modExtensions>
-	</XenotypeDef>
+	</XenotypeDef> -->
 
 </Defs>

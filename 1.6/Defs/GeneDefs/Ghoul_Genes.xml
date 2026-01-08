@@ -20,7 +20,7 @@
             <li Class="FCP_Ghoul.ChanceGene_ModExtension">
                 <chance>0.2</chance>
                 <gene1>FCP_Gene_Ghoul_ToxSpawn</gene1>
-                <gene2>FCP_Gene_Ghoul_Glow</gene2>
+                <gene2>FCP_Gene_Ghoul_Ferality</gene2>
             </li>
             <li Class="FCP_Ghoul.ToxHeal_ModExtension"/>
         </modExtensions>
@@ -42,26 +42,21 @@
 
     <!-- Toxic Glow -->
 
+    <!--
     <GeneDef>
         <defName>FCP_Gene_Ghoul_Glow</defName>
         <label>glow</label>
         <description>The carrier emits a faint, unnatural glow from their body, a hallmark of the rare "Glowing One" mutation among ghouls. This eerie radiance is caused by intense internal radiation and can illuminate dark areas, but may also draw unwanted attention.</description>
-        <geneClass>FCP_Ghoul.ChanceGene</geneClass>
         <iconPath>UI/Icons/Genes/FCP_Gene_Ghoul_Toxic_Heal</iconPath>
         <displayCategory>Miscellaneous</displayCategory>
         <displayOrderInCategory>500</displayOrderInCategory>
         <biostatCpx>1</biostatCpx>
         <biostatMet>-1</biostatMet>
-        <renderNodeProperties>
-            <li>
-                <nodeClass>FCP_Ghoul.PawnRenderNode_Shiny</nodeClass>
-                <overlayLayer>Body</overlayLayer>
-				<rotDrawMode>Fresh</rotDrawMode>
-                <shaderTypeDef>MoteGlow</shaderTypeDef>
-				<baseLayer>5</baseLayer>
-            </li>
-        </renderNodeProperties>
+        <hairColorOverride>(180, 255, 180)</hairColorOverride>
+        <skinColorBase>(180, 230, 180)</skinColorBase>
+        <skinColorOverride>(180, 230, 180)</skinColorOverride>
     </GeneDef>
+    -->
 
     <!-- Ferality -->
 

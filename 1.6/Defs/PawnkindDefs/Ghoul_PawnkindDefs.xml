@@ -49,6 +49,7 @@
 
     <!-- Glowing One Wastelander -->
 
+    <!--
     <PawnKindDef ParentName="FCP_Glowing_OnekindBase">
         <defName>FCP_Pawnkind_Glowing_One_Wastelander</defName>
         <label>Glowing One</label>
@@ -86,5 +87,6 @@
             </li>
         </backstoryFiltersOverride>
     </PawnKindDef>
+    -->
 
 </Defs>
