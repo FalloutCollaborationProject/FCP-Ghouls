@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <!-- Male Ghoul Heads -->
+
+    <HeadTypeDef>
+        <defName>FCP_Male_Ghoul_Average_Normal</defName>
+        <graphicPath>FCP_Ghoul/Heads/Male_Ghoul_Average_Normal</graphicPath>
+        <gender>Male</gender>
+        <randomChosen>false</randomChosen>
+    </HeadTypeDef>
+
+    <HeadTypeDef>
+        <defName>FCP_Male_Ghoul_Average_Pointy</defName>
+        <graphicPath>FCP_Ghoul/Heads/Male_Ghoul_Average_Pointy</graphicPath>
+        <gender>Male</gender>
+        <randomChosen>false</randomChosen>
+    </HeadTypeDef>
+
+    <HeadTypeDef>
+        <defName>FCP_Male_Ghoul_Average_Wide</defName>
+        <graphicPath>FCP_Ghoul/Heads/Male_Ghoul_Average_Wide</graphicPath>
+        <gender>Male</gender>
+        <randomChosen>false</randomChosen>
+    </HeadTypeDef>
+
+    <HeadTypeDef>
+        <defName>FCP_Male_Ghoul_Narrow_Normal</defName>
+        <graphicPath>FCP_Ghoul/Heads/Male_Ghoul_Narrow_Normal</graphicPath>
+        <gender>Male</gender>
+        <randomChosen>false</randomChosen>
+    </HeadTypeDef>
+
+    <HeadTypeDef>
+        <defName>FCP_Male_Ghoul_Narrow_Pointy</defName>
+        <graphicPath>FCP_Ghoul/Heads/Male_Ghoul_Narrow_Pointy</graphicPath>
+        <gender>Male</gender>
+        <randomChosen>false</randomChosen>
+    </HeadTypeDef>
+
+    <HeadTypeDef>
+        <defName>FCP_Male_Ghoul_Narrow_Wide</defName>
+        <graphicPath>FCP_Ghoul/Heads/Male_Ghoul_Narrow_Wide</graphicPath>
+        <gender>Male</gender>
+        <randomChosen>false</randomChosen>
+    </HeadTypeDef>
+
+    <!-- Female Ghoul Heads -->
+
+    <HeadTypeDef>
+        <defName>FCP_Female_Ghoul_Average_Normal</defName>
+        <graphicPath>FCP_Ghoul/Heads/Female_Ghoul_Average_Normal</graphicPath>
+        <gender>Female</gender>
+        <randomChosen>false</randomChosen>
+    </HeadTypeDef>
+
+    <HeadTypeDef>
+        <defName>FCP_Female_Ghoul_Average_Pointy</defName>
+        <graphicPath>FCP_Ghoul/Heads/Female_Ghoul_Average_Pointy</graphicPath>
+        <gender>Female</gender>
+        <randomChosen>false</randomChosen>
+    </HeadTypeDef>
+
+    <HeadTypeDef>
+        <defName>FCP_Female_Ghoul_Average_Wide</defName>
+        <graphicPath>FCP_Ghoul/Heads/Female_Ghoul_Average_Wide</graphicPath>
+        <gender>Female</gender>
+        <randomChosen>false</randomChosen>
+    </HeadTypeDef>
+
+    <HeadTypeDef>
+        <defName>FCP_Female_Ghoul_Narrow_Normal</defName>
+        <graphicPath>FCP_Ghoul/Heads/Female_Ghoul_Narrow_Normal</graphicPath>
+        <gender>Female</gender>
+        <randomChosen>false</randomChosen>
+    </HeadTypeDef>
+
+    <HeadTypeDef>
+        <defName>FCP_Female_Ghoul_Narrow_Pointy</defName>
+        <graphicPath>FCP_Ghoul/Heads/Female_Ghoul_Narrow_Pointy</graphicPath>
+        <gender>Female</gender>
+        <randomChosen>false</randomChosen>
+    </HeadTypeDef>
+
+    <HeadTypeDef>
+        <defName>FCP_Female_Ghoul_Narrow_Wide</defName>
+        <graphicPath>FCP_Ghoul/Heads/Female_Ghoul_Narrow_Wide</graphicPath>
+        <gender>Female</gender>
+        <randomChosen>false</randomChosen>
+    </HeadTypeDef>
+
+    <!-- Feral Ghoul Heads -->
+
+    <HeadTypeDef>
+        <defName>FCP_Feral_Ghoul_Head</defName>
+        <graphicPath>FCP_Ghoul/Feral/Heads/male/Male_Average_Normal</graphicPath>
+        <gender>Male</gender>
+        <randomChosen>false</randomChosen>
+    </HeadTypeDef>
+
+    <HeadTypeDef>
+        <defName>FCP_Feral_Ghoul_Head_Female</defName>
+        <graphicPath>FCP_Ghoul/Feral/Heads/female/Female_Average_Normal</graphicPath>
+        <gender>Female</gender>
+        <randomChosen>false</randomChosen>
+    </HeadTypeDef>
+
+</Defs>

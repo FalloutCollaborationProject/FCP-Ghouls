@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <!-- Quest 1: Feral Ghoul Infestation -->
+    <QuestScriptDef>
+        <defName>FCP_Quest_FeralGhoulInfestation</defName>
+        <rootSelectionWeight>0.8</rootSelectionWeight>
+        <rootMinPoints>200</rootMinPoints>
+        <defaultChallengeRating>2</defaultChallengeRating>
+        <canGiveRoyalFavor>false</canGiveRoyalFavor>
+        <expireDaysRange>5~10</expireDaysRange>
+        <questNameRules>
+            <rulesStrings>
+                <li>questName->Feral Ghoul Nest</li>
+                <li>questName->Ghoul Extermination</li>
+                <li>questName->The [location] Infestation</li>
+                <li>questName->Clear the Ferals</li>
+                <li>questName->Ghoul Problem</li>
+                <li>location->Ruins</li>
+                <li>location->Bunker</li>
+                <li>location->Subway</li>
+                <li>location->Warehouse</li>
+            </rulesStrings>
+        </questNameRules>
+        <questDescriptionRules>
+            <rulesStrings>
+                <li>questDescription->[asker_nameFull] of [asker_faction_name] reports: "We've got a serious problem - a pack of feral ghouls has taken over [location]. They've been attacking any scavengers who get too close. The place likely has valuable pre-war salvage, but nobody's getting in while those ferals are nesting there. Clear them out and you can keep whatever you find inside."</li>
+                <li>questDescription->Message from [asker_faction_name]: "Intelligence suggests a large group of feral ghouls has made a nest in [location]. These mindless creatures are a threat to everyone in the region. [asker_nameFull] is offering payment and salvage rights to anyone who can eliminate the infestation."</li>
+                <li>questDescription->[asker_nameFull] needs help: "Ferals have overrun [location] - must be at least a dozen of them. They're aggressive, mindless, and getting bolder. Someone needs to put them down before they start raiding settlements. Fair warning: these aren't your typical ghouls - they're completely feral and will attack on sight."</li>
+                <li>location->an old bunker</li>
+                <li>location->a ruined warehouse</li>
+                <li>location->a subway station</li>
+                <li>location->an abandoned hospital</li>
+                <li>location->a collapsed building</li>
+            </rulesStrings>
+        </questDescriptionRules>
+        <root Class="QuestNode_Sequence">
+            <nodes>
+                <li Class="QuestNode_GetPawn">
+                    <storeAs>asker</storeAs>
+                </li>
+                <li Class="QuestNode_SubScript">
+                    <def>Util_RandomizePointsChallengeRating</def>
+                </li>
+                <li Class="QuestNode_GetMap" />
+                <li Class="QuestNode_GetSiteTile">
+                    <storeAs>siteTile</storeAs>
+                    <preferCloserTiles>true</preferCloserTiles>
+                </li>
+                <li Class="QuestNode_Set">
+                    <name>sitePartDefs</name>
+                    <value>FCP_SitePart_FeralGhoulNest</value>
+                </li>
+                <li Class="QuestNode_GetDefaultSitePartsParams">
+                    <tile>$siteTile</tile>
+                    <sitePartDefs>$sitePartDefs</sitePartDefs>
+                    <storeSitePartsParamsAs>sitePartsParams</storeSitePartsParamsAs>
+                </li>
+                <li Class="QuestNode_GetSiteThreatPoints">
+                    <storeAs>sitePoints</storeAs>
+                    <sitePartsParams>$sitePartsParams</sitePartsParams>
+                </li>
+                <li Class="QuestNode_SubScript">
+                    <def>Util_GenerateSite</def>
+                </li>
+                <li Class="QuestNode_SpawnWorldObjects">
+                    <worldObjects>$site</worldObjects>
+                </li>
+                <li Class="QuestNode_WorldObjectTimeout">
+                    <worldObject>$site</worldObject>
+                    <isQuestTimeout>true</isQuestTimeout>
+                    <delayTicks>$(randInt(300000,600000))</delayTicks>
+                    <inSignalDisable>site.MapGenerated</inSignalDisable>
+                    <node Class="QuestNode_Sequence">
+                        <nodes>
+                            <li Class="QuestNode_Letter">
+                                <label>Quest expired: [resolvedQuestName]</label>
+                                <text>The feral ghouls have dispersed from the area.</text>
+                            </li>
+                            <li Class="QuestNode_End">
+                                <outcome>Fail</outcome>
+                            </li>
+                        </nodes>
+                    </node>
+                </li>
+                <li Class="QuestNode_Letter">
+                    <label>Quest available: [resolvedQuestName]</label>
+                    <text>[resolvedQuestDescription]</text>
+                    <lookTargets>$site</lookTargets>
+                </li>
+                <li Class="QuestNode_Signal">
+                    <inSignal>site.AllEnemiesDefeated</inSignal>
+                    <node Class="QuestNode_GiveRewards">
+                        <parms>
+                            <allowGoodwill>true</allowGoodwill>
+                            <allowRoyalFavor>false</allowRoyalFavor>
+                        </parms>
+                    </node>
+                </li>
+                <li Class="QuestNode_End">
+                    <inSignal>site.AllEnemiesDefeated</inSignal>
+                    <outcome>Success</outcome>
+                </li>
+            </nodes>
+        </root>
+    </QuestScriptDef>
+
+    <!-- Quest 2: Glowing One Elimination (Anomaly DLC) -->
+    <QuestScriptDef MayRequire="Ludeon.RimWorld.Anomaly">
+        <defName>FCP_Quest_GlowingOneElimination</defName>
+        <rootSelectionWeight>0.6</rootSelectionWeight>
+        <rootMinPoints>400</rootMinPoints>
+        <defaultChallengeRating>3</defaultChallengeRating>
+        <canGiveRoyalFavor>false</canGiveRoyalFavor>
+        <expireDaysRange>7~14</expireDaysRange>
+        <questNameRules>
+            <rulesStrings>
+                <li>questName->The Glowing Threat</li>
+                <li>questName->Eliminate the Glowing One</li>
+                <li>questName->Radioactive Elimination</li>
+                <li>questName->The Walking Reactor</li>
+                <li>questName->Lethal Hazard</li>
+            </rulesStrings>
+        </questNameRules>
+        <questDescriptionRules>
+            <rulesStrings>
+                <li>questDescription->[asker_nameFull] transmits an urgent alert: "We've located an extremely dangerous glowing one - completely feral and emitting lethal radiation. It's killed everyone who's gotten close. This thing needs to be put down permanently. WARNING: It's in a permanent berserk state and cannot be reasoned with or captured. Lethal force only."</li>
+                <li>questDescription->Emergency broadcast from [asker_faction_name]: "Feral glowing one detected near [location]. This entity is beyond saving - it's mindless, hyper-aggressive, and radiating at deadly levels. [asker_nameFull] is offering substantial payment for its elimination. Do not attempt containment - it will kill you."</li>
+                <li>questDescription->[asker_nameFull] requests immediate extermination: "A berserk glowing one is terrorizing [location]. Two containment teams went in - none came out. This isn't a capture mission anymore. Kill it before it kills more people. Heavy firepower recommended."</li>
+                <li>location->an industrial zone</li>
+                <li>location->a nuclear facility</li>
+                <li>location->a contaminated sector</li>
+                <li>location->a reactor site</li>
+            </rulesStrings>
+        </questDescriptionRules>
+        <root Class="QuestNode_Sequence">
+            <nodes>
+                <li Class="QuestNode_GetPawn">
+                    <storeAs>asker</storeAs>
+                </li>
+                <li Class="QuestNode_SubScript">
+                    <def>Util_RandomizePointsChallengeRating</def>
+                </li>
+                <li Class="QuestNode_GetMap" />
+                <li Class="QuestNode_GetSiteTile">
+                    <storeAs>siteTile</storeAs>
+                    <preferCloserTiles>true</preferCloserTiles>
+                </li>
+                <li Class="QuestNode_Set">
+                    <name>sitePartDefs</name>
+                    <value>FCP_SitePart_GlowingOneElimination</value>
+                </li>
+                <li Class="QuestNode_GetDefaultSitePartsParams">
+                    <tile>$siteTile</tile>
+                    <sitePartDefs>$sitePartDefs</sitePartDefs>
+                    <storeSitePartsParamsAs>sitePartsParams</storeSitePartsParamsAs>
+                </li>
+                <li Class="QuestNode_GetSiteThreatPoints">
+                    <storeAs>sitePoints</storeAs>
+                    <sitePartsParams>$sitePartsParams</sitePartsParams>
+                </li>
+                <li Class="QuestNode_SubScript">
+                    <def>Util_GenerateSite</def>
+                </li>
+                <li Class="QuestNode_SpawnWorldObjects">
+                    <worldObjects>$site</worldObjects>
+                </li>
+                <li Class="QuestNode_WorldObjectTimeout">
+                    <worldObject>$site</worldObject>
+                    <isQuestTimeout>true</isQuestTimeout>
+                    <delayTicks>$(randInt(420000,840000))</delayTicks>
+                    <inSignalDisable>site.MapGenerated</inSignalDisable>
+                    <node Class="QuestNode_Sequence">
+                        <nodes>
+                            <li Class="QuestNode_Letter">
+                                <label>Quest expired: [resolvedQuestName]</label>
+                                <text>The glowing one has moved to another location.</text>
+                            </li>
+                            <li Class="QuestNode_End">
+                                <outcome>Fail</outcome>
+                            </li>
+                        </nodes>
+                    </node>
+                </li>
+                <li Class="QuestNode_Letter">
+                    <label>Quest available: [resolvedQuestName]</label>
+                    <text>[resolvedQuestDescription]</text>
+                    <lookTargets>$site</lookTargets>
+                </li>
+                <li Class="QuestNode_Signal">
+                    <inSignal>site.AllEnemiesDefeated</inSignal>
+                    <node Class="QuestNode_GiveRewards">
+                        <parms>
+                            <allowGoodwill>true</allowGoodwill>
+                            <allowRoyalFavor>false</allowRoyalFavor>
+                            <chosenPawnSignal>ChosenPawnForReward</chosenPawnSignal>
+                        </parms>
+                    </node>
+                </li>
+                <li Class="QuestNode_End">
+                    <inSignal>site.AllEnemiesDefeated</inSignal>
+                    <outcome>Success</outcome>
+                </li>
+            </nodes>
+        </root>
+    </QuestScriptDef>
+
+    <!-- Quest 3: Glowing One Containment (Anomaly DLC) -->
+    <QuestScriptDef MayRequire="Ludeon.RimWorld.Anomaly">
+        <defName>FCP_Quest_GlowingOneContainment</defName>
+        <rootSelectionWeight>0.5</rootSelectionWeight>
+        <rootMinPoints>400</rootMinPoints>
+        <defaultChallengeRating>3</defaultChallengeRating>
+        <canGiveRoyalFavor>false</canGiveRoyalFavor>
+        <expireDaysRange>7~14</expireDaysRange>
+        <questNameRules>
+            <rulesStrings>
+                <li>questName->The Glowing One</li>
+                <li>questName->Radioactive Threat</li>
+                <li>questName->Containment Protocol</li>
+                <li>questName->The Walking Reactor</li>
+                <li>questName->Hazardous Entity</li>
+            </rulesStrings>
+        </questNameRules>
+        <questDescriptionRules>
+            <rulesStrings>
+                <li>questDescription->[asker_nameFull] transmits an urgent message: "We've located an extremely dangerous glowing one - a ghoul so irradiated it's practically a walking reactor. Unlike the feral ones, this specimen shows signs of intelligence. We need it captured alive for research, but elimination is acceptable if necessary. WARNING: The radiation it emits can kill in minutes. Bring containment equipment for maximum reward."</li>
+                <li>questDescription->Priority alert from [asker_faction_name]: "Anomalous entity detected - a glowing one with radiation levels off the charts but retaining some cognitive function. [asker_nameFull] reports: 'This specimen could be invaluable for research if captured alive. We're offering full payment for live containment, partial payment for elimination. Your choice on approach.'"</li>
+                <li>questDescription->[asker_nameFull] requests immediate assistance: "A highly radioactive glowing one has been spotted near [location]. This one isn't completely feral - it might be possible to capture it. The entity must be neutralized or captured. If you have anomaly containment protocols, this is the time to use them. Full bounty for live capture, half payment if killed."</li>
+                <li>location->an industrial zone</li>
+                <li>location->a nuclear facility</li>
+                <li>location->a contaminated sector</li>
+                <li>location->a reactor site</li>
+            </rulesStrings>
+        </questDescriptionRules>
+        <root Class="QuestNode_Sequence">
+            <nodes>
+                <li Class="QuestNode_GetPawn">
+                    <storeAs>asker</storeAs>
+                </li>
+                <li Class="QuestNode_SubScript">
+                    <def>Util_RandomizePointsChallengeRating</def>
+                </li>
+                <li Class="QuestNode_GetMap" />
+                <li Class="QuestNode_GetSiteTile">
+                    <storeAs>siteTile</storeAs>
+                    <preferCloserTiles>true</preferCloserTiles>
+                </li>
+                <li Class="QuestNode_Set">
+                    <name>sitePartDefs</name>
+                    <value>FCP_SitePart_GlowingOneContainment</value>
+                </li>
+                <li Class="QuestNode_GetDefaultSitePartsParams">
+                    <tile>$siteTile</tile>
+                    <sitePartDefs>$sitePartDefs</sitePartDefs>
+                    <storeSitePartsParamsAs>sitePartsParams</storeSitePartsParamsAs>
+                </li>
+                <li Class="QuestNode_GetSiteThreatPoints">
+                    <storeAs>sitePoints</storeAs>
+                    <sitePartsParams>$sitePartsParams</sitePartsParams>
+                </li>
+                <li Class="QuestNode_SubScript">
+                    <def>Util_GenerateSite</def>
+                </li>
+                <li Class="QuestNode_SpawnWorldObjects">
+                    <worldObjects>$site</worldObjects>
+                </li>
+                <li Class="QuestNode_WorldObjectTimeout">
+                    <worldObject>$site</worldObject>
+                    <isQuestTimeout>true</isQuestTimeout>
+                    <delayTicks>$(randInt(420000,840000))</delayTicks>
+                    <inSignalDisable>site.MapGenerated</inSignalDisable>
+                    <node Class="QuestNode_Sequence">
+                        <nodes>
+                            <li Class="QuestNode_Letter">
+                                <label>Quest expired: [resolvedQuestName]</label>
+                                <text>The glowing one has moved to another location.</text>
+                            </li>
+                            <li Class="QuestNode_End">
+                                <outcome>Fail</outcome>
+                            </li>
+                        </nodes>
+                    </node>
+                </li>
+                <li Class="QuestNode_Letter">
+                    <label>Quest available: [resolvedQuestName]</label>
+                    <text>[resolvedQuestDescription]
+
+Reward: Full payment for containment/capture, partial payment for elimination.</text>
+                    <lookTargets>$site</lookTargets>
+                </li>
+                
+                <!-- Check if glowing one was captured when quest completes -->
+                <li Class="FCP_Ghoul.QuestNode_GlowingOneCaptured">
+                    <inSignal>site.AllEnemiesDefeated</inSignal>
+                    <node Class="QuestNode_Sequence">
+                        <nodes>
+                            <!-- Captured glowing one - Full reward -->
+                            <li Class="QuestNode_Letter">
+                                <label>Quest complete: [resolvedQuestName]</label>
+                                <text>You successfully captured the glowing one alive. [asker_nameFull] is pleased with this outcome - the entity can now be studied safely.</text>
+                            </li>
+                            <li Class="QuestNode_GiveRewards">
+                                <parms>
+                                    <allowGoodwill>true</allowGoodwill>
+                                    <allowRoyalFavor>false</allowRoyalFavor>
+                                    <chosenPawnSignal>ChosenPawnForReward</chosenPawnSignal>
+                                </parms>
+                            </li>
+                            <li Class="QuestNode_End">
+                                <outcome>Success</outcome>
+                            </li>
+                        </nodes>
+                    </node>
+                    <elseNode Class="QuestNode_Sequence">
+                        <nodes>
+                            <!-- Killed glowing one - Partial reward (50%) -->
+                            <li Class="QuestNode_Letter">
+                                <label>Quest complete: [resolvedQuestName]</label>
+                                <text>The glowing one has been eliminated. While this resolves the immediate threat, [asker_nameFull] notes that capturing it alive would have been more valuable for research purposes. You receive partial payment.</text>
+                            </li>
+                            <li Class="QuestNode_GiveRewards">
+                                <parms>
+                                    <allowGoodwill>true</allowGoodwill>
+                                    <allowRoyalFavor>false</allowRoyalFavor>
+                                    <rewardValueFactor>0.5</rewardValueFactor>
+                                    <chosenPawnSignal>ChosenPawnForReward</chosenPawnSignal>
+                                </parms>
+                            </li>
+                            <li Class="QuestNode_End">
+                                <outcome>Success</outcome>
+                            </li>
+                        </nodes>
+                    </elseNode>
+                </li>
+            </nodes>
+        </root>
+    </QuestScriptDef>
+
+</Defs>

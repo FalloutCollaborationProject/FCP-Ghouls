@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <GeneDef>
+    <defName>FCP_Gene_Ghoul_GlowingOne</defName>
+    <label>glowing one</label>
+    <description>Carriers of this gene emit a constant radioactive glow. They damage nearby non-ghouls with radiation while healing other ghouls. Glowing ones also heal from toxic buildup.</description>
+    <geneClass>FCP_Ghoul.Gene_Ghoul_GlowingOne</geneClass>
+    <displayCategory>Miscellaneous</displayCategory>
+    <biostatCpx>3</biostatCpx>
+    <biostatMet>-2</biostatMet>
+    <displayOrderInCategory>500</displayOrderInCategory>
+    <iconPath>UI/Icons/Genes/Gene_FireSpew</iconPath>
+    <marketValueFactor>1.5</marketValueFactor>
+    <selectionWeight>0.05</selectionWeight>
+    <exclusionTags>
+      <li>GlowingOne</li>
+    </exclusionTags>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>FCP_Gene_Ghoul_Skin_GlowingOne</defName>
+    <label>glowing one skin</label>
+    <description>Carriers have the intensely radioactive, glowing green flesh of a glowing one.</description>
+    <geneClass>FCP_Ghoul.Gene_GhoulBody</geneClass>
+    <iconPath>UI/Icons/Genes/Gene_FireSpew</iconPath>
+    <displayCategory>Miscellaneous</displayCategory>
+    <displayOrderInCategory>502</displayOrderInCategory>
+    <biostatCpx>0</biostatCpx>
+    <biostatMet>0</biostatMet>
+    <skinColorOverride>(182, 255, 90)</skinColorOverride>
+    <exclusionTags>
+      <li>HairStyle</li>
+      <li>Fur</li>
+      <li>GhoulSkin</li>
+    </exclusionTags>
+    <hairTagFilter>
+      <whitelist>true</whitelist>
+      <tags>
+        <li>Bald</li>
+      </tags>
+    </hairTagFilter>
+    <forcedHeadTypes>
+      <li>FCP_Male_Ghoul_Average_Normal</li>
+      <li>FCP_Male_Ghoul_Average_Pointy</li>
+      <li>FCP_Male_Ghoul_Average_Wide</li>
+      <li>FCP_Male_Ghoul_Narrow_Normal</li>
+      <li>FCP_Male_Ghoul_Narrow_Pointy</li>
+      <li>FCP_Male_Ghoul_Narrow_Wide</li>
+      <li>FCP_Female_Ghoul_Average_Normal</li>
+      <li>FCP_Female_Ghoul_Average_Pointy</li>
+      <li>FCP_Female_Ghoul_Average_Wide</li>
+      <li>FCP_Female_Ghoul_Narrow_Normal</li>
+      <li>FCP_Female_Ghoul_Narrow_Pointy</li>
+      <li>FCP_Female_Ghoul_Narrow_Wide</li>
+    </forcedHeadTypes>
+    <selectionWeight>0</selectionWeight>
+  </GeneDef>
+
+</Defs>

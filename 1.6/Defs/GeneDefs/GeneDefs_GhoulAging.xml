@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <GeneDef>
+    <defName>FCP_Gene_Ghoul_LongLived</defName>
+    <label>ghoul longevity</label>
+    <description>Carriers of this gene age extremely slowly due to radiation-induced cellular changes. Ghouls can live well over 200 years.</description>
+    <iconPath>UI/Icons/Genes/Gene_Ageless</iconPath>
+    <displayCategory>Miscellaneous</displayCategory>
+    <displayOrderInCategory>499</displayOrderInCategory>
+    <biologicalAgeTickFactorFromAgeCurve>
+      <points>
+        <li>(0, 1)</li>
+        <li>(18, 0.44)</li>
+      </points>
+    </biologicalAgeTickFactorFromAgeCurve>
+    <biostatCpx>2</biostatCpx>
+    <biostatMet>0</biostatMet>
+    <selectionWeight>0</selectionWeight>
+    <exclusionTags>
+      <li>Aging</li>
+    </exclusionTags>
+  </GeneDef>
+
+</Defs>

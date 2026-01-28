@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <!-- Feral Ghoul Nest Site -->
+    <SitePartDef>
+        <defName>FCP_SitePart_FeralGhoulNest</defName>
+        <label>feral ghoul nest</label>
+        <description>A nest of feral ghouls.</description>
+        <tags>
+            <li>FCP_FeralGhoulNest</li>
+        </tags>
+        <workerClass>SitePartWorker</workerClass>
+        <siteTexture>FCP_Ghoul/Heads/Male_Ghoul_Average_Normal_south</siteTexture>
+        <expandingIconTexture>World/WorldObjects/Expanding/Sites/Ambush</expandingIconTexture>
+        <arrivedLetter>You have arrived at the feral ghoul nest. Eliminate all ferals to complete the quest.</arrivedLetter>
+    </SitePartDef>
+
+    <GenStepDef>
+        <defName>FCP_GenStep_FeralGhoulNest</defName>
+        <linkWithSite>FCP_SitePart_FeralGhoulNest</linkWithSite>
+        <order>450</order>
+        <genStep Class="FCP_Ghoul.GenStep_FeralGhoulNest">
+            <pawnKindDef>FCP_Pawnkind_Ghoul_Feral</pawnKindDef>
+            <minGhouls>8</minGhouls>
+            <maxGhouls>16</maxGhouls>
+        </genStep>
+    </GenStepDef>
+
+    <!-- Glowing One Elimination Site (Anomaly DLC) -->
+    <SitePartDef MayRequire="Ludeon.RimWorld.Anomaly">
+        <defName>FCP_SitePart_GlowingOneElimination</defName>
+        <label>glowing one threat</label>
+        <description>A location with an extremely dangerous, berserk glowing one.</description>
+        <tags>
+            <li>FCP_GlowingOneElimination</li>
+        </tags>
+        <workerClass>SitePartWorker</workerClass>
+        <siteTexture>FCP_Ghoul/Heads/Male_Ghoul_Average_Normal_south</siteTexture>
+        <expandingIconTexture>World/WorldObjects/Expanding/Sites/Ambush</expandingIconTexture>
+        <arrivedLetter>You have arrived at the glowing one's location. Extreme caution advised - this entity is completely feral and will attack on sight.</arrivedLetter>
+    </SitePartDef>
+
+    <GenStepDef MayRequire="Ludeon.RimWorld.Anomaly">
+        <defName>FCP_GenStep_GlowingOneElimination</defName>
+        <linkWithSite>FCP_SitePart_GlowingOneElimination</linkWithSite>
+        <order>450</order>
+        <genStep Class="FCP_Ghoul.GenStep_GlowingOne">
+            <pawnKindDef>FCP_Pawnkind_Ghoul_GlowingOne</pawnKindDef>
+            <glowingOneIsBerserk>true</glowingOneIsBerserk>
+        </genStep>
+    </GenStepDef>
+
+    <!-- Glowing One Containment Site (Anomaly DLC) -->
+    <SitePartDef MayRequire="Ludeon.RimWorld.Anomaly">
+        <defName>FCP_SitePart_GlowingOneContainment</defName>
+        <label>glowing one containment</label>
+        <description>A location with a dangerous glowing one that could potentially be captured.</description>
+        <tags>
+            <li>FCP_GlowingOneContainment</li>
+        </tags>
+        <workerClass>SitePartWorker</workerClass>
+        <siteTexture>FCP_Ghoul/Heads/Male_Ghoul_Average_Normal_south</siteTexture>
+        <expandingIconTexture>World/WorldObjects/Expanding/Sites/Ambush</expandingIconTexture>
+        <arrivedLetter>You have arrived at the glowing one's location. Extreme caution advised - consider bringing containment equipment if you want to capture it alive.</arrivedLetter>
+    </SitePartDef>
+
+    <GenStepDef MayRequire="Ludeon.RimWorld.Anomaly">
+        <defName>FCP_GenStep_GlowingOneContainment</defName>
+        <linkWithSite>FCP_SitePart_GlowingOneContainment</linkWithSite>
+        <order>450</order>
+        <genStep Class="FCP_Ghoul.GenStep_GlowingOne">
+            <pawnKindDef>FCP_Pawnkind_Ghoul_GlowingOne</pawnKindDef>
+            <glowingOneIsBerserk>false</glowingOneIsBerserk>
+        </genStep>
+    </GenStepDef>
+
+</Defs>

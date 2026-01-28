@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!-- Disabled - causing non-hostile ghouls to spawn. Quest sites use linkWithSite instead. -->
+    <!--
+    <GenStepDef>
+        <defName>FCP_SpawnFeralGhouls</defName>
+        <order>441</order>
+        <genStep Class="FCP_Ghoul.GenStep_FeralGhoulSpawn">
+            <pawnKindDef>FCP_Pawnkind_Ghoul_Feral</pawnKindDef>
+            <spawnChance>0.35</spawnChance>
+            <minPackSize>2</minPackSize>
+            <maxPackSize>5</maxPackSize>
+        </genStep>
+    </GenStepDef>
+    -->
+
+</Defs>

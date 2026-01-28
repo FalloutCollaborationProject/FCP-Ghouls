@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <!-- Disabled - causing non-hostile ghouls to spawn on all maps -->
+    <!--
+    <Operation Class="PatchOperationSequence">
+        <operations>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/MapGeneratorDef[defName="Base_Player"]/genSteps</xpath>
+                <value>
+                    <li>FCP_SpawnFeralGhouls</li>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+    -->
+</Patch>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <!-- Glowing One Hediff - marker for the gene system -->
+    <HediffDef>
+        <defName>FCP_Hediff_Glowing_One</defName>
+        <label>glowing one</label>
+        <description>This ghoul's body emits an eerie radioactive glow. They slowly emit toxic radiation that harms nearby non-ghouls.</description>
+        <isBad>false</isBad>
+        <initialSeverity>1</initialSeverity>
+        <maxSeverity>1</maxSeverity>
+    </HediffDef>
+
+</Defs>
