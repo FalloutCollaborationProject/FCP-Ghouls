@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
+    <!--__________ Ghoul Quests __________-->
+
     <!-- Quest 1: Feral Ghoul Infestation -->
+
     <QuestScriptDef>
         <defName>FCP_Quest_FeralGhoulInfestation</defName>
         <rootSelectionWeight>0.8</rootSelectionWeight>
@@ -105,8 +108,9 @@
         </root>
     </QuestScriptDef>
 
-    <!-- Quest 2: Glowing One Elimination (Anomaly DLC) -->
-    <QuestScriptDef MayRequire="Ludeon.RimWorld.Anomaly">
+    <!-- Quest 2: Glowing One Elimination -->
+
+    <QuestScriptDef>
         <defName>FCP_Quest_GlowingOneElimination</defName>
         <rootSelectionWeight>0.6</rootSelectionWeight>
         <rootMinPoints>400</rootMinPoints>
@@ -205,7 +209,8 @@
         </root>
     </QuestScriptDef>
 
-    <!-- Quest 3: Glowing One Containment (Anomaly DLC) -->
+    <!-- Quest 3: Glowing One Containment -->
+
     <QuestScriptDef MayRequire="Ludeon.RimWorld.Anomaly">
         <defName>FCP_Quest_GlowingOneContainment</defName>
         <rootSelectionWeight>0.5</rootSelectionWeight>
@@ -284,13 +289,9 @@
                 </li>
                 <li Class="QuestNode_Letter">
                     <label>Quest available: [resolvedQuestName]</label>
-                    <text>[resolvedQuestDescription]
-
-Reward: Full payment for containment/capture, partial payment for elimination.</text>
+                    <text>[resolvedQuestDescription] Reward: Full payment for containment/capture, partial payment for elimination.</text>
                     <lookTargets>$site</lookTargets>
                 </li>
-                
-                <!-- Check if glowing one was captured when quest completes -->
                 <li Class="FCP_Ghoul.QuestNode_GlowingOneCaptured">
                     <inSignal>site.AllEnemiesDefeated</inSignal>
                     <node Class="QuestNode_Sequence">
@@ -314,7 +315,7 @@ Reward: Full payment for containment/capture, partial payment for elimination.</
                     </node>
                     <elseNode Class="QuestNode_Sequence">
                         <nodes>
-                            <!-- Killed glowing one - Partial reward (50%) -->
+                            <!-- Killed glowing one - Partial reward -->
                             <li Class="QuestNode_Letter">
                                 <label>Quest complete: [resolvedQuestName]</label>
                                 <text>The glowing one has been eliminated. While this resolves the immediate threat, [asker_nameFull] notes that capturing it alive would have been more valuable for research purposes. You receive partial payment.</text>

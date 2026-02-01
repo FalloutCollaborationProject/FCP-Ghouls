@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-    <!-- Regular Ghoul - 75% spawn rate -->
+    <!--__________ Ghoul Xenotypes __________-->
+
+    <!-- Ghoul -->
+
     <XenotypeDef>
         <defName>FCP_Xenotype_Ghoul</defName>
         <label>ghoul</label>
@@ -25,7 +28,8 @@
         </genes>
     </XenotypeDef>
 
-    <!-- Feral Ghoul - 25% spawn rate -->
+    <!-- Feral Ghoul -->
+
     <XenotypeDef>
         <defName>FCP_Xenotype_Ghoul_Feral</defName>
         <label>ghoul</label>
@@ -50,7 +54,8 @@
         </genes>
     </XenotypeDef>
 
-    <!-- Glowing One - Rare variant -->
+    <!-- Glowing One -->
+
     <XenotypeDef>
         <defName>FCP_Xenotype_Ghoul_Glowing_One</defName>
         <label>glowing one</label>
@@ -71,7 +76,8 @@
         </genes>
     </XenotypeDef>
 
-    <!-- Feral Glowing One - Rare feral variant -->
+    <!-- Feral Glowing One -->
+
     <XenotypeDef>
         <defName>FCP_Xenotype_Ghoul_GlowingOne_Feral</defName>
         <label>glowing one</label>

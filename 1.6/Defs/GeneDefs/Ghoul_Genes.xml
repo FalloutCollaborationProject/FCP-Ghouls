@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
+    <!--__________ Ghoul Genes __________-->
+
+    <!-- Ghoul Healing -->
+
     <GeneDef>
         <defName>FCP_Gene_ToxicHealing</defName>
         <label>toxic metabolism</label>
@@ -16,6 +20,8 @@
             <ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
         </statOffsets>
     </GeneDef>
+
+    <!-- Ghoul Ferality -->
 
     <GeneDef>
         <defName>FCP_Gene_Ferality</defName>
@@ -42,7 +48,51 @@
         </modExtensions>
     </GeneDef>
 
-    <!-- Ghoul Skin Color Variants -->
+    <!-- Ghoul Longevity -->
+
+    <GeneDef>
+        <defName>FCP_Gene_Ghoul_LongLived</defName>
+        <label>ghoul longevity</label>
+        <description>Carriers of this gene age extremely slowly due to radiation-induced cellular changes. Ghouls can live well over 200 years.</description>
+        <iconPath>UI/Icons/Genes/Gene_Ageless</iconPath>
+        <displayCategory>Miscellaneous</displayCategory>
+        <displayOrderInCategory>499</displayOrderInCategory>
+        <biologicalAgeTickFactorFromAgeCurve>
+            <points>
+                <li>(0, 1)</li>
+                <li>(18, 0.44)</li>
+            </points>
+        </biologicalAgeTickFactorFromAgeCurve>
+        <biostatCpx>2</biostatCpx>
+        <biostatMet>0</biostatMet>
+        <selectionWeight>0</selectionWeight>
+        <exclusionTags>
+            <li>Aging</li>
+        </exclusionTags>
+    </GeneDef>
+
+    <!-- Ghoul Glowing One -->
+
+    <GeneDef>
+        <defName>FCP_Gene_Ghoul_GlowingOne</defName>
+        <label>glowing one</label>
+        <description>Carriers of this gene emit a constant radioactive glow. They damage nearby non-ghouls with radiation while healing other ghouls. Glowing ones also heal from toxic buildup.</description>
+        <geneClass>FCP_Ghoul.Gene_Ghoul_GlowingOne</geneClass>
+        <displayCategory>Miscellaneous</displayCategory>
+        <biostatCpx>3</biostatCpx>
+        <biostatMet>-2</biostatMet>
+        <displayOrderInCategory>500</displayOrderInCategory>
+        <iconPath>UI/Icons/Genes/Gene_FireSpew</iconPath>
+        <marketValueFactor>1.5</marketValueFactor>
+        <selectionWeight>0.05</selectionWeight>
+        <exclusionTags>
+            <li>GlowingOne</li>
+        </exclusionTags>
+    </GeneDef>
+
+    <!--_____ Ghoul Skin Color Variants _____-->
+
+    <!-- Ghoul Skin -->
 
     <GeneDef Name="GhoulSkinBase" Abstract="True">
         <label>ghoul skin</label>
@@ -53,6 +103,10 @@
         <displayOrderInCategory>502</displayOrderInCategory>
         <biostatCpx>0</biostatCpx>
         <biostatMet>0</biostatMet>
+        <statOffsets>
+            <PawnBeauty>-2</PawnBeauty>
+            <SocialImpact>-0.25</SocialImpact>
+        </statOffsets>
         <exclusionTags>
             <li>HairStyle</li>
             <li>Fur</li>
@@ -80,6 +134,8 @@
         </forcedHeadTypes>
     </GeneDef>
 
+    <!-- Ghoul Skin Green -->
+
     <GeneDef ParentName="GhoulSkinBase">
         <defName>FCP_Gene_Ghoul_Skin_Green</defName>
         <label>ghoul skin (green)</label>
@@ -87,6 +143,8 @@
         <selectionWeight>1</selectionWeight>
         <skinColorOverride>(140, 166, 115)</skinColorOverride>
     </GeneDef>
+
+    <!-- Ghoul Skin Peach -->
 
     <GeneDef ParentName="GhoulSkinBase">
         <defName>FCP_Gene_Ghoul_Skin_Peach</defName>
@@ -96,6 +154,8 @@
         <skinColorOverride>(191, 153, 128)</skinColorOverride>
     </GeneDef>
 
+    <!-- Ghoul Skin Yellow -->
+
     <GeneDef ParentName="GhoulSkinBase">
         <defName>FCP_Gene_Ghoul_Skin_Yellow</defName>
         <label>ghoul skin (yellow)</label>
@@ -103,6 +163,8 @@
         <selectionWeight>1</selectionWeight>
         <skinColorOverride>(179, 179, 115)</skinColorOverride>
     </GeneDef>
+
+    <!-- Ghoul Skin Pink -->
 
     <GeneDef ParentName="GhoulSkinBase">
         <defName>FCP_Gene_Ghoul_Skin_Pink</defName>
@@ -112,6 +174,8 @@
         <skinColorOverride>(191, 140, 140)</skinColorOverride>
     </GeneDef>
 
+    <!-- Ghoul Skin Tan -->
+
     <GeneDef ParentName="GhoulSkinBase">
         <defName>FCP_Gene_Ghoul_Skin</defName>
         <label>ghoul skin (tan)</label>
@@ -119,6 +183,8 @@
         <selectionWeight>1</selectionWeight>
         <skinColorOverride>(179, 166, 128)</skinColorOverride>
     </GeneDef>
+
+    <!-- Feral Ghoul Skin -->
 
     <GeneDef>
         <defName>FCP_Gene_Ghoul_Feral_Skin</defName>
@@ -146,6 +212,47 @@
             <li>FCP_Feral_Ghoul_Head</li>
             <li>FCP_Feral_Ghoul_Head_Female</li>
         </forcedHeadTypes>
+    </GeneDef>
+
+    <!-- Ghoul Skin Glowing One -->
+
+    <GeneDef>
+        <defName>FCP_Gene_Ghoul_Skin_GlowingOne</defName>
+        <label>glowing one skin</label>
+        <description>Carriers have the intensely radioactive, glowing green flesh of a glowing one.</description>
+        <geneClass>FCP_Ghoul.Gene_GhoulBody</geneClass>
+        <iconPath>UI/Icons/Genes/Gene_FireSpew</iconPath>
+        <displayCategory>Miscellaneous</displayCategory>
+        <displayOrderInCategory>502</displayOrderInCategory>
+        <biostatCpx>0</biostatCpx>
+        <biostatMet>0</biostatMet>
+        <skinColorOverride>(182, 255, 90)</skinColorOverride>
+        <exclusionTags>
+            <li>HairStyle</li>
+            <li>Fur</li>
+            <li>GhoulSkin</li>
+        </exclusionTags>
+        <hairTagFilter>
+            <whitelist>true</whitelist>
+            <tags>
+                <li>Bald</li>
+            </tags>
+        </hairTagFilter>
+        <forcedHeadTypes>
+            <li>FCP_Male_Ghoul_Average_Normal</li>
+            <li>FCP_Male_Ghoul_Average_Pointy</li>
+            <li>FCP_Male_Ghoul_Average_Wide</li>
+            <li>FCP_Male_Ghoul_Narrow_Normal</li>
+            <li>FCP_Male_Ghoul_Narrow_Pointy</li>
+            <li>FCP_Male_Ghoul_Narrow_Wide</li>
+            <li>FCP_Female_Ghoul_Average_Normal</li>
+            <li>FCP_Female_Ghoul_Average_Pointy</li>
+            <li>FCP_Female_Ghoul_Average_Wide</li>
+            <li>FCP_Female_Ghoul_Narrow_Normal</li>
+            <li>FCP_Female_Ghoul_Narrow_Pointy</li>
+            <li>FCP_Female_Ghoul_Narrow_Wide</li>
+        </forcedHeadTypes>
+        <selectionWeight>0</selectionWeight>
     </GeneDef>
 
 </Defs>

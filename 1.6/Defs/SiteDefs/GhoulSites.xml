@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
+    <!--__________ Ghoul Sites __________-->
+
     <!-- Feral Ghoul Nest Site -->
+
     <SitePartDef>
         <defName>FCP_SitePart_FeralGhoulNest</defName>
         <label>feral ghoul nest</label>
@@ -15,6 +18,8 @@
         <arrivedLetter>You have arrived at the feral ghoul nest. Eliminate all ferals to complete the quest.</arrivedLetter>
     </SitePartDef>
 
+    <!-- Feral Ghoul Nest Genstep -->
+
     <GenStepDef>
         <defName>FCP_GenStep_FeralGhoulNest</defName>
         <linkWithSite>FCP_SitePart_FeralGhoulNest</linkWithSite>
@@ -26,8 +31,9 @@
         </genStep>
     </GenStepDef>
 
-    <!-- Glowing One Elimination Site (Anomaly DLC) -->
-    <SitePartDef MayRequire="Ludeon.RimWorld.Anomaly">
+    <!-- Glowing One Elimination Site -->
+
+    <SitePartDef>
         <defName>FCP_SitePart_GlowingOneElimination</defName>
         <label>glowing one threat</label>
         <description>A location with an extremely dangerous, berserk glowing one.</description>
@@ -40,7 +46,9 @@
         <arrivedLetter>You have arrived at the glowing one's location. Extreme caution advised - this entity is completely feral and will attack on sight.</arrivedLetter>
     </SitePartDef>
 
-    <GenStepDef MayRequire="Ludeon.RimWorld.Anomaly">
+    <!-- Glowing One Elimination Genstep -->
+
+    <GenStepDef>
         <defName>FCP_GenStep_GlowingOneElimination</defName>
         <linkWithSite>FCP_SitePart_GlowingOneElimination</linkWithSite>
         <order>450</order>
@@ -50,7 +58,8 @@
         </genStep>
     </GenStepDef>
 
-    <!-- Glowing One Containment Site (Anomaly DLC) -->
+    <!-- Glowing One Containment Site -->
+
     <SitePartDef MayRequire="Ludeon.RimWorld.Anomaly">
         <defName>FCP_SitePart_GlowingOneContainment</defName>
         <label>glowing one containment</label>
@@ -63,6 +72,8 @@
         <expandingIconTexture>World/WorldObjects/Expanding/Sites/Ambush</expandingIconTexture>
         <arrivedLetter>You have arrived at the glowing one's location. Extreme caution advised - consider bringing containment equipment if you want to capture it alive.</arrivedLetter>
     </SitePartDef>
+
+    <!-- Glowing One Containment Genstep -->
 
     <GenStepDef MayRequire="Ludeon.RimWorld.Anomaly">
         <defName>FCP_GenStep_GlowingOneContainment</defName>

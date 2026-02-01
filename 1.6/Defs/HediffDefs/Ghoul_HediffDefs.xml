@@ -1,7 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
+    <!--__________ Ghoul Hediffs __________-->
+
+    <!-- Ghoul Transformation Hediff -->
+
+    <HediffDef>
+        <defName>FCP_Hediff_GhoulTransformation</defName>
+        <label>radiation sickness</label>
+        <description>Prolonged exposure to toxic radiation is slowly transforming this person into a ghoul. Their body is breaking down and changing at a cellular level. If the toxic buildup persists, the transformation will be complete.</description>
+        <hediffClass>HediffWithComps</hediffClass>
+        <defaultLabelColor>(1, 0.5, 0.5)</defaultLabelColor>
+        <isBad>true</isBad>
+        <tendable>false</tendable>
+        <maxSeverity>1</maxSeverity>
+        <comps>
+            <li Class="FCP_Ghoul.HediffCompProperties_GhoulTransformation" />
+        </comps>
+    </HediffDef>
+
     <!-- Glowing One Hediff - marker for the gene system -->
+
     <HediffDef>
         <defName>FCP_Hediff_Glowing_One</defName>
         <label>glowing one</label>
