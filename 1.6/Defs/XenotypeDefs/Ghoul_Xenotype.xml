@@ -13,7 +13,7 @@
         <descriptionShort>Radiation-mutated humans with rotting flesh who are healed by toxins.</descriptionShort>
         <inheritable>true</inheritable>
         <modExtensions>
-            <li Class="FCP_Ghoul.TurnFeral_ModExtension" />
+            <li Class="FCP.Core.Ghouls.TurnFeral_ModExtension" />
         </modExtensions>
         <genes>
             <li>Sterile</li>
@@ -38,7 +38,7 @@
         <descriptionShort>Ghouls with deteriorating minds prone to violent episodes.</descriptionShort>
         <inheritable>true</inheritable>
         <modExtensions>
-            <li Class="FCP_Ghoul.TurnFeral_ModExtension" />
+            <li Class="FCP.Core.Ghouls.TurnFeral_ModExtension" />
         </modExtensions>
         <genes>
             <li>Sterile</li>
@@ -64,7 +64,7 @@
         <descriptionShort>Rare radioactive ghouls that emit deadly radiation.</descriptionShort>
         <inheritable>true</inheritable>
         <modExtensions>
-            <li Class="FCP_Ghoul.TurnFeral_ModExtension" />
+            <li Class="FCP.Core.Ghouls.TurnFeral_ModExtension" />
         </modExtensions>
         <genes>
             <li>Sterile</li>
@@ -86,7 +86,7 @@
         <descriptionShort>Feral radioactive ghouls with deteriorating minds.</descriptionShort>
         <inheritable>true</inheritable>
         <modExtensions>
-            <li Class="FCP_Ghoul.TurnFeral_ModExtension" />
+            <li Class="FCP.Core.Ghouls.TurnFeral_ModExtension" />
         </modExtensions>
         <genes>
             <li>Sterile</li>

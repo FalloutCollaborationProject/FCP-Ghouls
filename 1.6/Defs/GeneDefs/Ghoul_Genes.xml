@@ -9,7 +9,7 @@
         <defName>FCP_Gene_ToxicHealing</defName>
         <label>toxic metabolism</label>
         <description>Carriers have adapted to convert toxic buildup into healing energy. Their bodies use radiation and toxins as fuel for regeneration. They are completely immune to toxic damage.</description>
-        <geneClass>FCP_Ghoul.Gene_ToxicHealing</geneClass>
+        <geneClass>FCP.Core.Ghouls.Gene_ToxicHealing</geneClass>
         <iconPath>UI/Icons/Genes/FCP_Gene_Ghoul_Toxic_Heal</iconPath>
         <displayCategory>Miscellaneous</displayCategory>
         <displayOrderInCategory>500</displayOrderInCategory>
@@ -27,14 +27,14 @@
         <defName>FCP_Gene_Ferality</defName>
         <label>ferality</label>
         <description>Carriers slowly lose their mind over time. Without regular chemical intervention, they will eventually go feral and become hostile. Certain drugs can temporarily reduce ferality.</description>
-        <geneClass>FCP_Ghoul.Gene_Ferality</geneClass>
+        <geneClass>FCP.Core.Ghouls.Gene_Ferality</geneClass>
         <iconPath>UI/Icons/Genes/FCP_Gene_Ghoul_Toxic_Heal</iconPath>
         <displayCategory>Miscellaneous</displayCategory>
         <displayOrderInCategory>501</displayOrderInCategory>
         <biostatCpx>2</biostatCpx>
         <biostatMet>-1</biostatMet>
         <modExtensions>
-            <li Class="FCP_Ghoul.FeralityGene_ModExtension">
+            <li Class="FCP.Core.Ghouls.FeralityGene_ModExtension">
                 <increaseIntervalTicks>60000</increaseIntervalTicks>
                 <feralityIncreaseAmount>1</feralityIncreaseAmount>
                 <amountReducedPerDrug>20</amountReducedPerDrug>
@@ -77,12 +77,12 @@
         <defName>FCP_Gene_Ghoul_GlowingOne</defName>
         <label>glowing one</label>
         <description>Carriers of this gene emit a constant radioactive glow. They damage nearby non-ghouls with radiation while healing other ghouls. Glowing ones also heal from toxic buildup.</description>
-        <geneClass>FCP_Ghoul.Gene_Ghoul_GlowingOne</geneClass>
+        <geneClass>FCP.Core.Ghouls.Gene_Ghoul_GlowingOne</geneClass>
         <displayCategory>Miscellaneous</displayCategory>
         <biostatCpx>3</biostatCpx>
         <biostatMet>-2</biostatMet>
         <displayOrderInCategory>500</displayOrderInCategory>
-        <iconPath>UI/Icons/Genes/Gene_FireSpew</iconPath>
+        <iconPath>UI/Icons/Genes/FCP_Gene_Ghoul_Toxic_Aura</iconPath>
         <marketValueFactor>1.5</marketValueFactor>
         <selectionWeight>0.05</selectionWeight>
         <exclusionTags>
@@ -97,7 +97,7 @@
     <GeneDef Name="GhoulSkinBase" Abstract="True">
         <label>ghoul skin</label>
         <description>Carriers have the rotting, irradiated flesh characteristic of ghouls.</description>
-        <geneClass>FCP_Ghoul.Gene_GhoulBody</geneClass>
+        <geneClass>FCP.Core.Ghouls.Gene_GhoulBody</geneClass>
         <iconPath>UI/Icons/Genes/Gene_FireSpew</iconPath>
         <displayCategory>Miscellaneous</displayCategory>
         <displayOrderInCategory>502</displayOrderInCategory>
@@ -190,7 +190,7 @@
         <defName>FCP_Gene_Ghoul_Feral_Skin</defName>
         <label>feral ghoul skin</label>
         <description>Carriers have the completely degraded flesh of a feral ghoul.</description>
-        <geneClass>FCP_Ghoul.Gene_GhoulBody</geneClass>
+        <geneClass>FCP.Core.Ghouls.Gene_GhoulBody</geneClass>
         <iconPath>UI/Icons/Genes/Gene_FireSpew</iconPath>
         <displayCategory>Miscellaneous</displayCategory>
         <displayOrderInCategory>503</displayOrderInCategory>
@@ -220,7 +220,7 @@
         <defName>FCP_Gene_Ghoul_Skin_GlowingOne</defName>
         <label>glowing one skin</label>
         <description>Carriers have the intensely radioactive, glowing green flesh of a glowing one.</description>
-        <geneClass>FCP_Ghoul.Gene_GhoulBody</geneClass>
+        <geneClass>FCP.Core.Ghouls.Gene_GhoulBody</geneClass>
         <iconPath>UI/Icons/Genes/Gene_FireSpew</iconPath>
         <displayCategory>Miscellaneous</displayCategory>
         <displayOrderInCategory>502</displayOrderInCategory>

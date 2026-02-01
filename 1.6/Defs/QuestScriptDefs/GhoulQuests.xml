@@ -289,17 +289,16 @@
                 </li>
                 <li Class="QuestNode_Letter">
                     <label>Quest available: [resolvedQuestName]</label>
-                    <text>[resolvedQuestDescription] Reward: Full payment for containment/capture, partial payment for elimination.</text>
+                    <text>[resolvedQuestDescription]</text>
                     <lookTargets>$site</lookTargets>
                 </li>
-                <li Class="FCP_Ghoul.QuestNode_GlowingOneCaptured">
+                <li Class="QuestNode_Signal">
                     <inSignal>site.AllEnemiesDefeated</inSignal>
                     <node Class="QuestNode_Sequence">
                         <nodes>
-                            <!-- Captured glowing one - Full reward -->
                             <li Class="QuestNode_Letter">
                                 <label>Quest complete: [resolvedQuestName]</label>
-                                <text>You successfully captured the glowing one alive. [asker_nameFull] is pleased with this outcome - the entity can now be studied safely.</text>
+                                <text>The glowing one threat has been neutralized.</text>
                             </li>
                             <li Class="QuestNode_GiveRewards">
                                 <parms>
@@ -313,26 +312,6 @@
                             </li>
                         </nodes>
                     </node>
-                    <elseNode Class="QuestNode_Sequence">
-                        <nodes>
-                            <!-- Killed glowing one - Partial reward -->
-                            <li Class="QuestNode_Letter">
-                                <label>Quest complete: [resolvedQuestName]</label>
-                                <text>The glowing one has been eliminated. While this resolves the immediate threat, [asker_nameFull] notes that capturing it alive would have been more valuable for research purposes. You receive partial payment.</text>
-                            </li>
-                            <li Class="QuestNode_GiveRewards">
-                                <parms>
-                                    <allowGoodwill>true</allowGoodwill>
-                                    <allowRoyalFavor>false</allowRoyalFavor>
-                                    <rewardValueFactor>0.5</rewardValueFactor>
-                                    <chosenPawnSignal>ChosenPawnForReward</chosenPawnSignal>
-                                </parms>
-                            </li>
-                            <li Class="QuestNode_End">
-                                <outcome>Success</outcome>
-                            </li>
-                        </nodes>
-                    </elseNode>
                 </li>
             </nodes>
         </root>

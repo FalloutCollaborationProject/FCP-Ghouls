@@ -24,7 +24,7 @@
         <defName>FCP_GenStep_FeralGhoulNest</defName>
         <linkWithSite>FCP_SitePart_FeralGhoulNest</linkWithSite>
         <order>450</order>
-        <genStep Class="FCP_Ghoul.GenStep_FeralGhoulNest">
+        <genStep Class="FCP.Core.Ghouls.GenStep_FeralGhoulNest">
             <pawnKindDef>FCP_Pawnkind_Ghoul_Feral</pawnKindDef>
             <minGhouls>8</minGhouls>
             <maxGhouls>16</maxGhouls>
@@ -52,7 +52,7 @@
         <defName>FCP_GenStep_GlowingOneElimination</defName>
         <linkWithSite>FCP_SitePart_GlowingOneElimination</linkWithSite>
         <order>450</order>
-        <genStep Class="FCP_Ghoul.GenStep_GlowingOne">
+        <genStep Class="FCP.Core.Ghouls.GenStep_GlowingOne">
             <pawnKindDef>FCP_Pawnkind_Ghoul_GlowingOne</pawnKindDef>
             <glowingOneIsBerserk>true</glowingOneIsBerserk>
         </genStep>
@@ -79,7 +79,7 @@
         <defName>FCP_GenStep_GlowingOneContainment</defName>
         <linkWithSite>FCP_SitePart_GlowingOneContainment</linkWithSite>
         <order>450</order>
-        <genStep Class="FCP_Ghoul.GenStep_GlowingOne">
+        <genStep Class="FCP.Core.Ghouls.GenStep_GlowingOne">
             <pawnKindDef>FCP_Pawnkind_Ghoul_GlowingOne</pawnKindDef>
             <glowingOneIsBerserk>false</glowingOneIsBerserk>
         </genStep>
