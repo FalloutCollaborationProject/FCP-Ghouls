@@ -28,11 +28,11 @@
         <label>ferality</label>
         <description>Carriers slowly lose their mind over time. Without regular chemical intervention, they will eventually go feral and become hostile. Certain drugs can temporarily reduce ferality.</description>
         <geneClass>FCP.Core.Ghouls.Gene_Ferality</geneClass>
-        <iconPath>UI/Icons/Genes/FCP_Gene_Ghoul_Toxic_Heal</iconPath>
+        <iconPath>UI/Icons/Genes/FCP_Gene_Ghoul_Ferality</iconPath>
         <displayCategory>Miscellaneous</displayCategory>
         <displayOrderInCategory>501</displayOrderInCategory>
         <biostatCpx>2</biostatCpx>
-        <biostatMet>-1</biostatMet>
+        <biostatMet>2</biostatMet>
         <modExtensions>
             <li Class="FCP.Core.Ghouls.FeralityGene_ModExtension">
                 <increaseIntervalTicks>60000</increaseIntervalTicks>
@@ -82,7 +82,7 @@
         <biostatCpx>3</biostatCpx>
         <biostatMet>-2</biostatMet>
         <displayOrderInCategory>500</displayOrderInCategory>
-        <iconPath>UI/Icons/Genes/FCP_Gene_Ghoul_Toxic_Aura</iconPath>
+        <iconPath>UI/Icons/Genes/FCP_Gene_Ghoul_GlowingOne</iconPath>
         <marketValueFactor>1.5</marketValueFactor>
         <selectionWeight>0.05</selectionWeight>
         <exclusionTags>
@@ -98,11 +98,11 @@
         <label>ghoul skin</label>
         <description>Carriers have the rotting, irradiated flesh characteristic of ghouls.</description>
         <geneClass>FCP.Core.Ghouls.Gene_GhoulBody</geneClass>
-        <iconPath>UI/Icons/Genes/Gene_FireSpew</iconPath>
+        <iconPath>UI/Icons/Genes/Gene_SkinColorOverride</iconPath>
         <displayCategory>Miscellaneous</displayCategory>
         <displayOrderInCategory>502</displayOrderInCategory>
         <biostatCpx>0</biostatCpx>
-        <biostatMet>0</biostatMet>
+        <biostatMet>1</biostatMet>
         <statOffsets>
             <PawnBeauty>-2</PawnBeauty>
             <SocialImpact>-0.25</SocialImpact>
@@ -191,7 +191,7 @@
         <label>feral ghoul skin</label>
         <description>Carriers have the completely degraded flesh of a feral ghoul.</description>
         <geneClass>FCP.Core.Ghouls.Gene_GhoulBody</geneClass>
-        <iconPath>UI/Icons/Genes/Gene_FireSpew</iconPath>
+        <iconPath>UI/Icons/Genes/Gene_SkinColorOverride</iconPath>
         <displayCategory>Miscellaneous</displayCategory>
         <displayOrderInCategory>503</displayOrderInCategory>
         <biostatCpx>0</biostatCpx>
@@ -221,7 +221,7 @@
         <label>glowing one skin</label>
         <description>Carriers have the intensely radioactive, glowing green flesh of a glowing one.</description>
         <geneClass>FCP.Core.Ghouls.Gene_GhoulBody</geneClass>
-        <iconPath>UI/Icons/Genes/Gene_FireSpew</iconPath>
+        <iconPath>UI/Icons/Genes/Gene_SkinColorOverride</iconPath>
         <displayCategory>Miscellaneous</displayCategory>
         <displayOrderInCategory>502</displayOrderInCategory>
         <biostatCpx>0</biostatCpx>
