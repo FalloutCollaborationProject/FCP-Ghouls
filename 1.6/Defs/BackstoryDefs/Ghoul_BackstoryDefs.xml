@@ -92,7 +92,7 @@
         <slot>Adulthood</slot>
         <title>Wasteland Scavenger</title>
         <titleShort>Scavenger</titleShort>
-        <description>[PAWN_nameDef] survived by picking through ruins and forgotten vaults, always searching for something valuable. Years of scavenging made [PAWN_pronoun] resourceful, but wary of strangers.</description>
+        <description>[PAWN_nameDef] survived by picking through ruins and forgotten vaults, always searching for something valuable. Years of scavenging made [PAWN_possessive] resourceful, but wary of strangers.</description>
         <skillGains>
             <Construction>2</Construction>
             <Mining>3</Mining>
