@@ -27,9 +27,10 @@
         </questNameRules>
         <questDescriptionRules>
             <rulesStrings>
-                <li>questDescription->[asker_nameFull] of [asker_faction_name] reports: "We've got a serious problem - a pack of feral ghouls has taken over [location]. They've been attacking any scavengers who get too close. The place likely has valuable pre-war salvage, but nobody's getting in while those ferals are nesting there. Clear them out and you can keep whatever you find inside."</li>
-                <li>questDescription->Message from [asker_faction_name]: "Intelligence suggests a large group of feral ghouls has made a nest in [location]. These mindless creatures are a threat to everyone in the region. [asker_nameFull] is offering payment and salvage rights to anyone who can eliminate the infestation."</li>
-                <li>questDescription->[asker_nameFull] needs help: "Ferals have overrun [location] - must be at least a dozen of them. They're aggressive, mindless, and getting bolder. Someone needs to put them down before they start raiding settlements. Fair warning: these aren't your typical ghouls - they're completely feral and will attack on sight."</li>
+                <li>requirements->Requirements: defeat every feral ghoul at the site. If they disperse before you arrive, there's nothing left to clear.</li>
+                <li>questDescription->[asker_nameFull] of [asker_faction_name] reports: "We've got a serious problem - a pack of feral ghouls has taken over [location]. They've been attacking any scavengers who get too close. The place likely has valuable pre-war salvage, but nobody's getting in while those ferals are nesting there. Clear them out and you can keep whatever you find inside."\n\n[requirements]</li>
+                <li>questDescription->Message from [asker_faction_name]: "Intelligence suggests a large group of feral ghouls has made a nest in [location]. These mindless creatures are a threat to everyone in the region. [asker_nameFull] is offering payment and salvage rights to anyone who can eliminate the infestation."\n\n[requirements]</li>
+                <li>questDescription->[asker_nameFull] needs help: "Ferals have overrun [location] - must be at least a dozen of them. They're aggressive, mindless, and getting bolder. Someone needs to put them down before they start raiding settlements. Fair warning: these aren't your typical ghouls - they're completely feral and will attack on sight."\n\n[requirements]</li>
                 <li>location->an old bunker</li>
                 <li>location->a ruined warehouse</li>
                 <li>location->a subway station</li>
@@ -128,9 +129,10 @@
         </questNameRules>
         <questDescriptionRules>
             <rulesStrings>
-                <li>questDescription->[asker_nameFull] transmits an urgent alert: "We've located an extremely dangerous glowing one - completely feral and emitting lethal radiation. It's killed everyone who's gotten close. This thing needs to be put down permanently. WARNING: It's in a permanent berserk state and cannot be reasoned with or captured. Lethal force only."</li>
-                <li>questDescription->Emergency broadcast from [asker_faction_name]: "Feral glowing one detected near [location]. This entity is beyond saving - it's mindless, hyper-aggressive, and radiating at deadly levels. [asker_nameFull] is offering substantial payment for its elimination. Do not attempt containment - it will kill you."</li>
-                <li>questDescription->[asker_nameFull] requests immediate extermination: "A berserk glowing one is terrorizing [location]. Two containment teams went in - none came out. This isn't a capture mission anymore. Kill it before it kills more people. Heavy firepower recommended."</li>
+                <li>requirements->Requirements: kill the glowing one. If it moves on before you arrive, the threat is gone with it.</li>
+                <li>questDescription->[asker_nameFull] transmits an urgent alert: "We've located an extremely dangerous glowing one - completely feral and emitting lethal radiation. It's killed everyone who's gotten close. This thing needs to be put down permanently. WARNING: It's in a permanent berserk state and cannot be reasoned with or captured. Lethal force only."\n\n[requirements]</li>
+                <li>questDescription->Emergency broadcast from [asker_faction_name]: "Feral glowing one detected near [location]. This entity is beyond saving - it's mindless, hyper-aggressive, and radiating at deadly levels. [asker_nameFull] is offering substantial payment for its elimination. Do not attempt containment - it will kill you."\n\n[requirements]</li>
+                <li>questDescription->[asker_nameFull] requests immediate extermination: "A berserk glowing one is terrorizing [location]. Two containment teams went in - none came out. This isn't a capture mission anymore. Kill it before it kills more people. Heavy firepower recommended."\n\n[requirements]</li>
                 <li>location->an industrial zone</li>
                 <li>location->a nuclear facility</li>
                 <li>location->a contaminated sector</li>
@@ -229,9 +231,10 @@
         </questNameRules>
         <questDescriptionRules>
             <rulesStrings>
-                <li>questDescription->[asker_nameFull] transmits an urgent message: "We've located an extremely dangerous glowing one - a ghoul so irradiated it's practically a walking reactor. Unlike the feral ones, this specimen shows signs of intelligence. We need it captured alive for research, but elimination is acceptable if necessary. WARNING: The radiation it emits can kill in minutes. Bring containment equipment for maximum reward."</li>
-                <li>questDescription->Priority alert from [asker_faction_name]: "Anomalous entity detected - a glowing one with radiation levels off the charts but retaining some cognitive function. [asker_nameFull] reports: 'This specimen could be invaluable for research if captured alive. We're offering full payment for live containment, partial payment for elimination. Your choice on approach.'"</li>
-                <li>questDescription->[asker_nameFull] requests immediate assistance: "A highly radioactive glowing one has been spotted near [location]. This one isn't completely feral - it might be possible to capture it. The entity must be neutralized or captured. If you have anomaly containment protocols, this is the time to use them. Full bounty for live capture, half payment if killed."</li>
+                <li>requirements->Requirements: kill or capture the glowing one at the site. If it moves on before you arrive, there's nothing left to confirm.</li>
+                <li>questDescription->[asker_nameFull] transmits an urgent message: "We've located an extremely dangerous glowing one - a ghoul so irradiated it's practically a walking reactor. Unlike the feral ones, this specimen shows signs of intelligence. We need it captured alive for research, but elimination is acceptable if necessary. WARNING: The radiation it emits can kill in minutes. Bring containment equipment for maximum reward."\n\n[requirements]</li>
+                <li>questDescription->Priority alert from [asker_faction_name]: "Anomalous entity detected - a glowing one with radiation levels off the charts but retaining some cognitive function. [asker_nameFull] reports: 'This specimen could be invaluable for research if captured alive. We're offering full payment for live containment, partial payment for elimination. Your choice on approach.'"\n\n[requirements]</li>
+                <li>questDescription->[asker_nameFull] requests immediate assistance: "A highly radioactive glowing one has been spotted near [location]. This one isn't completely feral - it might be possible to capture it. The entity must be neutralized or captured. If you have anomaly containment protocols, this is the time to use them. Full bounty for live capture, half payment if killed."\n\n[requirements]</li>
                 <li>location->an industrial zone</li>
                 <li>location->a nuclear facility</li>
                 <li>location->a contaminated sector</li>
