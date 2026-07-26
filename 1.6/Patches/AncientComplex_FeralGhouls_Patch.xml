@@ -1,0 +1,12 @@
+<Patch>
+
+    <!-- Add feral ghouls as a possible Ancient Complex threat, alongside sleeping mechanoids/insects -->
+
+    <Operation Class="PatchOperationAdd" MayRequire="Ludeon.RimWorld.Ideology">
+        <xpath>Defs/ComplexLayoutDef[defName="AncientComplex"]/threats</xpath>
+        <value>
+            <FCP_SleepingFeralGhouls />
+        </value>
+    </Operation>
+
+</Patch>

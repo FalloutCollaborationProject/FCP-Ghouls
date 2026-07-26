@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <!--__________ Factions __________-->
+
+    <!-- Feral Ghoul Horde -->
+
+    <FactionDef ParentName="FactionBase">
+        <defName>FCP_Faction_Ghoul_Feral</defName>
+        <label>feral ghoul horde</label>
+        <description>Former humans, twisted by centuries of radiation exposure into mindless, savage husks. Feral ghouls are drawn to old shelters and pre-war ruins, lying dormant for years until disturbed. They attack anything living on sight.</description>
+        <pawnSingular>feral ghoul</pawnSingular>
+        <pawnsPlural>feral ghouls</pawnsPlural>
+        <categoryTag>Ancient</categoryTag>
+        <requiredCountAtGameStart>1</requiredCountAtGameStart>
+        <maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
+        <configurationListOrderPriority>2000</configurationListOrderPriority>
+        <displayInFactionSelection>false</displayInFactionSelection>
+        <canGenerateQuestSites>false</canGenerateQuestSites>
+        <fixedName>Feral Ghoul Horde</fixedName>
+        <factionIconPath>FCP_Ghoul/Heads/Male_Ghoul_Average_Normal_south</factionIconPath>
+        <backstoryFilters>
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Wastelander_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Backstory_Ghoul</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFilters>
+        <raidsForbidden>true</raidsForbidden>
+        <raidCommonalityFromPointsCurve>
+            <points>
+                <li>(0, 0)</li>
+            </points>
+        </raidCommonalityFromPointsCurve>
+        <maxPawnCostPerTotalPointsCurve>
+            <points>
+                <li>(100,100)</li>
+                <li>(10000,10000)</li>
+            </points>
+        </maxPawnCostPerTotalPointsCurve>
+        <pawnGroupMakers>
+            <li>
+                <kindDef>Combat</kindDef>
+                <commonality>1</commonality>
+                <options>
+                    <FCP_Pawnkind_Ghoul_Feral>10</FCP_Pawnkind_Ghoul_Feral>
+                </options>
+            </li>
+        </pawnGroupMakers>
+        <humanlikeFaction>true</humanlikeFaction>
+        <hidden>true</hidden>
+        <rescueesCanJoin>false</rescueesCanJoin>
+        <autoFlee>false</autoFlee>
+        <canUseAvoidGrid>false</canUseAvoidGrid>
+        <techLevel>Industrial</techLevel>
+        <permanentEnemy>true</permanentEnemy>
+        <allowedMemes>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Structure_Archist</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Transhumanist</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">HumanPrimacy</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Loyalist</li>
+        </allowedMemes>
+        <requiredMemes>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Structure_Archist</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Transhumanist</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">HumanPrimacy</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Loyalist</li>
+        </requiredMemes>
+        <settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+        <allowedArrivalTemperatureRange>-20~50</allowedArrivalTemperatureRange>
+    </FactionDef>
+
+</Defs>

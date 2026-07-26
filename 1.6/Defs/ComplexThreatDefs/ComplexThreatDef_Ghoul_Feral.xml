@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <!--__________ Complex Threats __________-->
+
+    <!-- Sleeping Feral Ghouls (Ancient Complex threat) -->
+
+    <ComplexThreatDef ParentName="SleepingThreat">
+        <defName>FCP_SleepingFeralGhouls</defName>
+        <workerClass>FCP.Core.Ghouls.ComplexThreatWorker_SleepingFeralGhouls</workerClass>
+        <faction>FCP_Faction_Ghoul_Feral</faction>
+    </ComplexThreatDef>
+
+</Defs>
