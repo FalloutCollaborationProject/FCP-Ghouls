@@ -52,7 +52,7 @@
         <workDisables>None</workDisables>
         <requiredWorkTags>None</requiredWorkTags>
         <spawnCategories>
-            <li>FCP_Ghoul</li>
+            <li>FCP_Backstory_Ghoul</li>
         </spawnCategories>
         <bodyTypeFemale>Female</bodyTypeFemale>
         <bodyTypeMale>Male</bodyTypeMale>
