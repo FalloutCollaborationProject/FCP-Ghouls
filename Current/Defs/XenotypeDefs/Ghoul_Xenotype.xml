@@ -9,7 +9,7 @@
         <defName>FCP_Xenotype_Ghoul</defName>
         <label>ghoul</label>
         <iconPath>FCP_Ghoul/Heads/Male_Ghoul_Average_Normal_south</iconPath>
-        <description>A human twisted by prolonged exposure to toxic radiation. Their rotting flesh is a testament to their transformation, yet they persist - immune to toxins and healed by them. Some say they're already dead, just too stubborn to stop walking.</description>
+        <description>A human twisted by prolonged exposure to toxic radiation. Their flesh rots on the bone, but they keep going. Toxins can't hurt them and even heal them. Some say they're already dead, just too stubborn to stop walking.</description>
         <descriptionShort>Radiation-mutated humans with rotting flesh who are healed by toxins.</descriptionShort>
         <inheritable>true</inheritable>
         <modExtensions>
